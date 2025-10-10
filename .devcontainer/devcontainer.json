@@ -26,6 +26,18 @@
   ,
   "customizations": {
     "vscode": {
+      "extensions": [
+        "kitkat.kitkat-verilog",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter-renderers",
+        "ms-python.vscode-pylance",
+        "ms-python.python",
+        "ms-python.debugpy",
+        "ms-python.vscode-python-envs",
+        "lramseyer.vaporview",
+        "ms-toolsai.jupyter-keymap",
+        "ms-toolsai.vscode-jupyter-cell-tags"
+      ], 
       "settings": {
         "terminal.integrated.profiles.linux": {
           "bash": {

@@ -1,0 +1,7 @@
+{
+  "DESIGN_NAME": "rv32i_single_cycle",
+  "VERILOG_FILES": "dir::src/*.v",
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 10000,
+  "DIE_AREA": [250, 250, 1750, 1750]
+}
