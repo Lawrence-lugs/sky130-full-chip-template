@@ -1,0 +1,1 @@
+Here I test the OpenROAD flow for generating pads by creating a counter with 4 pads (N,E,W,S)

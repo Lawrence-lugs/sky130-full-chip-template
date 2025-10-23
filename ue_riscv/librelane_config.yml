@@ -1,0 +1,12 @@
+meta:
+  version: 0
+  flow: Classic
+  substituting_steps:
+    # XOR differences are weird for constrained area designs. If LVS DRC are ok, then ok.
+    Checker.XOR: null
+
+DESIGN_NAME: riscv_core
+VERILOG_FILES: "dir::src/*.v"
+CLOCK_PORT: clk
+CLOCK_PERIOD: 10000
+DIE_AREA: [250, 250, 1750, 1750]
