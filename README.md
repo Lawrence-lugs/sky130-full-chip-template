@@ -70,8 +70,7 @@ make
 
 ## TODO
 
-- [ ] Top level make
 - [ ] RISCV + Padring
-- [ ] Librelane-clean RISCV
+- [x] Librelane-clean RISCV
 - [ ] Devcontainer workflow
 - [ ] Make workflow

@@ -15,3 +15,7 @@ Run `make`
 
 `run.sh` script by itself already runs magic drc.
 You can reconfirm DRC clean by opening in Magic or KLayout.
+
+### Drawbacks
+
+Padring as a program has no connectivity information so it's impossible to define the settings of the generated pads.

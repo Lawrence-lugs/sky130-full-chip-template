@@ -201,3 +201,6 @@ __marimo__/
 
 ss_riscv/runs/*
 ue_riscv/runs/*
+
+# Openroad flow scripts testing
+orfs/
