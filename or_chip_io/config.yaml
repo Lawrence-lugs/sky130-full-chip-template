@@ -1,0 +1,22 @@
+meta:
+  version: 0
+  flow:
+      - "Yosys.Synthesis"
+  #     - "OpenROAD.CheckSDCFiles"
+  #     - "OpenROAD.Floorplan"
+  #     - "OpenROAD.TapEndcapInsertion"
+  #     - "OpenROAD.GeneratePDN"
+  #     - "OpenROAD.IOPlacement"
+  #     - "OpenROAD.GlobalPlacement"
+  flow: Classic
+
+VDD_NETS:
+- vccd
+- vddio
+GND_NETS:
+- vssd
+- vssio
+
+DESIGN_NAME: "chip_io"
+VERILOG_FILES:
+  - "src/chip_io.sv"

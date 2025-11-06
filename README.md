@@ -18,6 +18,12 @@ To run as devcontainer, you need to have:
 - [VSCode](https://code.visualstudio.com/) installed with the 
   [Remote - Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers).
 
+Then, run 
+
+```bash
+git clone https://github.com/Lawrence-lugs/sky130-full-chip-template.git
+```
+
 Then, you can open this folder in VSCode and it will prompt you to reopen it in a container.
 
 ### Run as docker container
@@ -35,9 +41,14 @@ To run as docker, follow the steps below to activate [JKU's Open Source Tools Do
     1. This part will take a while, as the PDKs and tools are downloaded.
 6. You should now have a usable terminal with which you can call all the tools and follow the instructions.
 
-If you are planning to edit files *outside* of this VNC environment (i.e. your host computer) for reasons like using your own text editor, make sure to perform all the projects in the directory `~/eda/designs` or `<HOME>/eda/designs`. This is the directory that is visible to the VNC.
+Then, run 
 
-For example, for me, I would clone all the repositories and make designs in `lquizon/eda/designs`. 
+```bash
+git clone https://github.com/Lawrence-lugs/sky130-full-chip-template.git
+cd sky130-full-chip-template
+```
+
+and you should have the base environment.
 
 ## Running the code
 
@@ -59,8 +70,7 @@ make
 
 ## TODO
 
-- [ ] Top level make
 - [ ] RISCV + Padring
-- [ ] Librelane-clean RISCV
+- [x] Librelane-clean RISCV
 - [ ] Devcontainer workflow
 - [ ] Make workflow

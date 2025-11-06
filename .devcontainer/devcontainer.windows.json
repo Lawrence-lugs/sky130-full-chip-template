@@ -1,0 +1,55 @@
+// For macOS, use the alternate config: devcontainer.macos.json
+{
+  "name": "iic-osic-tools_xserver",
+  "image": "hpretl/iic-osic-tools:latest",
+
+  "containerEnv": {
+    "DISPLAY": ":0",
+    "WAYLAND_DISPLAY": "wayland-0",
+    "XDG_RUNTIME_DIR": "/mnt/wslg/runtime-dir",
+    "PULSE_SERVER": "/mnt/wslg/PulseServer",
+    "SHELL": "/bin/bash"
+  },
+
+  "runArgs": [
+    "--device=/dev/dxg",
+    "--user", "1000:1000"
+  ],
+
+  "mounts": [
+    "type=bind,source=/run/desktop/mnt/host/wslg/.X11-unix,target=/tmp/.X11-unix",
+    "type=bind,source=/run/desktop/mnt/host/wslg,target=/mnt/wslg",
+    "type=bind,source=/usr/lib/wsl,target=/usr/lib/wsl"
+    // Unlike the usual iic-osic-tools setup, devcontainers mount the workspace folder automatically onto /workspaces/${localWorkspaceFolderBasename} 
+    // "type=bind,source=${localWorkspaceFolder},target=/foss/designs"
+  ]
+
+  ,
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "kitkat.kitkat-verilog",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter-renderers",
+        "ms-python.vscode-pylance",
+        "ms-python.python",
+        "ms-python.debugpy",
+        "ms-python.vscode-python-envs",
+        "lramseyer.vaporview",
+        "ms-toolsai.jupyter-keymap",
+        "ms-toolsai.vscode-jupyter-cell-tags"
+      ], 
+      "settings": {
+        "terminal.integrated.profiles.linux": {
+          "bash": {
+            "path": "/bin/bash",
+            "args": ["-l"],
+            "icon": "terminal-bash"
+          }
+        },
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  }
+
+}
