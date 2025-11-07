@@ -1,2 +1,2 @@
 read_verilog src/chip_io.sv
-write_verilog src/chip_io.gl.v
+write_verilog outputs/chip_io.gl.v
