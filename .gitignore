@@ -199,3 +199,6 @@ orfs/
 
 # Ignore the main devcontainer file
 .devcontainer/devcontainer.json
+
+# Magic extraction files
+extract/

@@ -11,8 +11,9 @@ make
 
 ### DRC and LVS
 
-[x] DRC
-[ ] LVS
+- [x] DRC
+- [ ] Script the DRC
+- [ ] LVS - Failing atm. Likely due to having to extract the pads when they already have their own spice.
 
 ### How to make edits
 

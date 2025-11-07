@@ -68,6 +68,10 @@ cd ss_riscv
 make
 ```
 
+## Librelane Scripts Directory
+
+If you need to inspect the scripts that Librelane uses internally, please see `/usr/local/lib/python3.12/dist-packages/librelane/scripts`
+
 ## TODO
 
 - [ ] RISCV + Padring
