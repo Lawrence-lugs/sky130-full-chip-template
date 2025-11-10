@@ -1,0 +1,38 @@
+meta:
+  version: 0
+  flow: Classic
+
+DESIGN_NAME: "core_wrapper"
+
+VERILOG_FILES: 
+- "dir::src/core_wrapper.sv" # Core wrapper instantiates core and the inouts are the pad-side
+
+# Floorplan
+FP_SIZING: absolute
+DIE_AREA:  [   0.00,   0.00, 2000.00, 2000.00 ]
+CORE_AREA: [ 250, 250, 1750, 1750 ]
+FP_DEF_TEMPLATE: "dir::../or_chip_io/outputs/chip_io.def" # Floorplan from padring design
+
+# Core Files. Replace with the output files from your core design flow.
+MACROS:
+  regfile:
+    nl:
+    - "dir::../register_files/outputs/nl/regfile.nl.v"
+    lef:
+    - "dir::../register_files/outputs/lef/regfile.lef"
+    gds:
+    - "dir::../register_files/outputs/gds/regfile.gds"
+    spef:
+      "nom_*":
+        - "dir::../register_files/outputs/spef/nom/regfile.nom.spef"
+    instances:
+      u_regfile:
+        location: [400, 400]
+        orientation: N
+
+# Power Distribution
+# FP_PDN_CFG: "dir::pdn_cfg.tcl" # Custom PDN config for most full-chip integrations
+VDD_NETS:
+- VDD
+GND_NETS:
+- VSS
