@@ -22,6 +22,14 @@ Then, run
 
 ```bash
 git clone https://github.com/Lawrence-lugs/sky130-full-chip-template.git
+cd sky130-full-chip-template
+```
+
+Then, copy one of the devcontainer templates into devcontainer.json
+
+```bash
+cp .devcontainer/devcontainer.windows.json .devcontainer/devcontainer.json # IF windows machine
+cp .devcontainer/devcontainer.macos.json .devcontainer/devcontainer.json # IF macos or linux machine
 ```
 
 Then, you can open this folder in VSCode and it will prompt you to reopen it in a container.
@@ -33,9 +41,9 @@ To run as docker, follow the steps below to activate [JKU's Open Source Tools Do
 1. Download [Docker Desktop](https://www.docker.com/products/docker-desktop/) for your OS
     1. A requirement for Docker is WSL2 on windows. Follow the instructions [here](https://learn.microsoft.com/en-us/windows/wsl/install) to setup WSL2.
 2. Start Docker Desktop
-1. Open the terminal inside docker
-3. In that `git clone --depth=1 https://github.com/iic-jku/iic-osic-tools.git`
-    1. For windows users, if git is not found, run the following in the command prompt: `winget install --id Git.Git -e --source winget`
+1. Open a terminal
+3. In that terminal, do `git clone --depth=1 https://github.com/iic-jku/iic-osic-tools.git`
+    1. For windows users using powershell, if git is not found, run the following in the command prompt: `winget install --id Git.Git -e --source winget`
 4. Change directory into the cloned directory: `cd iic-osic-tools`
 5. Then, use `./start_x.sh`  (or `./start_x.bat`, if you’re on Windows)
     1. This part will take a while, as the PDKs and tools are downloaded.
@@ -67,6 +75,10 @@ To run the single-cycle RISCV RTL-to-GDS flow with librelane, do:
 cd ss_riscv
 make
 ```
+
+## Librelane Scripts Directory
+
+If you need to inspect the scripts that Librelane uses internally, please see `/usr/local/lib/python3.12/dist-packages/librelane/scripts`
 
 ## TODO
 

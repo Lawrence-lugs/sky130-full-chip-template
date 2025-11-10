@@ -60,9 +60,9 @@ module chip_io #(
                 .INP_DIS         (por), // tied to 3.3V nrst = 1 in normal operation
                 .IN_H            (), // From core
                 .OE_N            (oe_n[i]), // From core
-                .OUT             (vssd), // From core
+                .OUT             (gpio_out[i]), // From core
                 .PAD             (gpio_pad[i]),
-                .PAD_A_ESD_0_H   (), // these connect straight to the pad
+                .PAD_A_ESD_0_H   (), // these connect straight to the padzf
                 .PAD_A_ESD_1_H   (), // these connect straight to the pad
                 .PAD_A_NOESD_H   (), // these connect straight to the pad
                 .SLOW            (vssd), // From core

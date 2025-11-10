@@ -124,15 +124,7 @@ ipython_config.py
 #   in the .venv directory. It is recommended not to include this directory in version control.
 .pixi
 
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
 __pypackages__/
-
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
-
-# SageMath parsed files
-*.sage.py
 
 # Environments
 .env
@@ -204,3 +196,9 @@ __marimo__/
 
 # Openroad flow scripts testing
 orfs/
+
+# Ignore the main devcontainer file
+.devcontainer/devcontainer.json
+
+# Magic extraction files
+extract/

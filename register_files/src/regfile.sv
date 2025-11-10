@@ -1,6 +1,6 @@
 module regfile #(
-    parameter dataWidth = 32,
-    parameter addrWidth = 8,
+    parameter dataWidth = 8,
+    parameter addrWidth = 5,
     parameter memDepth = 1 << addrWidth
 )(
     input logic clk,
