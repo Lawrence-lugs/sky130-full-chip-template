@@ -29,4 +29,4 @@ readnet spice /foss/pdks/sky130A/libs.ref/sky130_fd_io/spice/sky130_ef_io__analo
 
 readnet verilog outputs/chip_io.gl.v $circuit2
 
-lvs "$circuit1 chip_io" "$circuit2 chip_io" /usr/local/lib/python3.12/dist-packages/librelane/scripts/netgen/setup.tcl netgen_lvs.rpt -blackbox -json
+lvs "$circuit1 chip_io" "$circuit2 chip_io" /usr/local/lib/python3.12/dist-packages/librelane/scripts/netgen/setup.tcl reports/netgen_lvs.rpt -blackbox -json

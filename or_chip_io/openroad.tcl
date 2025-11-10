@@ -175,5 +175,5 @@ place_io_terminals -allow_non_top_layer u_vssio_pad/VSSIO
 # Remove the rows so they don't show up in the DEF
 remove_io_rows
 
-set def_file "chip_io.def"
+set def_file "outputs/chip_io.def"
 write_def $def_file

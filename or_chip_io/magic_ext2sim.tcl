@@ -42,3 +42,4 @@ ext2spice lvs
 # For designs with more than one top-level pin connected to the same net
 ext2spice short resistor
 ext2spice -o outputs/chip_io.spice outputs/chip_io.ext
+quit
