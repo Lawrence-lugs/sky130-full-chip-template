@@ -330,112 +330,64 @@ PINS 150 ;
     - gpio_pad[0] + NET gpio_pad[0] + SPECIAL + DIRECTION INOUT + USE SIGNAL
       + PORT
         + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
-        + FIXED ( 64215 1426500 ) N
-      + PORT
-        + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
         + FIXED ( 64215 1426500 ) N ;
     - gpio_pad[10] + NET gpio_pad[10] + SPECIAL + DIRECTION INOUT + USE SIGNAL
-      + PORT
-        + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
-        + FIXED ( 1935785 1228500 ) N
       + PORT
         + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
         + FIXED ( 1935785 1228500 ) N ;
     - gpio_pad[11] + NET gpio_pad[11] + SPECIAL + DIRECTION INOUT + USE SIGNAL
       + PORT
         + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
-        + FIXED ( 1935785 1101500 ) N
-      + PORT
-        + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
         + FIXED ( 1935785 1101500 ) N ;
     - gpio_pad[12] + NET gpio_pad[12] + SPECIAL + DIRECTION INOUT + USE SIGNAL
-      + PORT
-        + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
-        + FIXED ( 1935785 719500 ) N
       + PORT
         + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
         + FIXED ( 1935785 719500 ) N ;
     - gpio_pad[13] + NET gpio_pad[13] + SPECIAL + DIRECTION INOUT + USE SIGNAL
       + PORT
         + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
-        + FIXED ( 1935785 592500 ) N
-      + PORT
-        + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
         + FIXED ( 1935785 592500 ) N ;
     - gpio_pad[14] + NET gpio_pad[14] + SPECIAL + DIRECTION INOUT + USE SIGNAL
-      + PORT
-        + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
-        + FIXED ( 1935785 464500 ) N
       + PORT
         + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
         + FIXED ( 1935785 464500 ) N ;
     - gpio_pad[15] + NET gpio_pad[15] + SPECIAL + DIRECTION INOUT + USE SIGNAL
       + PORT
         + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
-        + FIXED ( 1935785 337500 ) N
-      + PORT
-        + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
         + FIXED ( 1935785 337500 ) N ;
     - gpio_pad[1] + NET gpio_pad[1] + SPECIAL + DIRECTION INOUT + USE SIGNAL
-      + PORT
-        + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
-        + FIXED ( 64215 1270500 ) N
       + PORT
         + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
         + FIXED ( 64215 1270500 ) N ;
     - gpio_pad[2] + NET gpio_pad[2] + SPECIAL + DIRECTION INOUT + USE SIGNAL
       + PORT
         + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
-        + FIXED ( 64215 1115500 ) N
-      + PORT
-        + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
         + FIXED ( 64215 1115500 ) N ;
     - gpio_pad[3] + NET gpio_pad[3] + SPECIAL + DIRECTION INOUT + USE SIGNAL
-      + PORT
-        + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
-        + FIXED ( 64215 959500 ) N
       + PORT
         + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
         + FIXED ( 64215 959500 ) N ;
     - gpio_pad[4] + NET gpio_pad[4] + SPECIAL + DIRECTION INOUT + USE SIGNAL
       + PORT
         + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
-        + FIXED ( 64215 804500 ) N
-      + PORT
-        + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
         + FIXED ( 64215 804500 ) N ;
     - gpio_pad[5] + NET gpio_pad[5] + SPECIAL + DIRECTION INOUT + USE SIGNAL
-      + PORT
-        + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
-        + FIXED ( 64215 648500 ) N
       + PORT
         + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
         + FIXED ( 64215 648500 ) N ;
     - gpio_pad[6] + NET gpio_pad[6] + SPECIAL + DIRECTION INOUT + USE SIGNAL
       + PORT
         + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
-        + FIXED ( 64215 493500 ) N
-      + PORT
-        + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
         + FIXED ( 64215 493500 ) N ;
     - gpio_pad[7] + NET gpio_pad[7] + SPECIAL + DIRECTION INOUT + USE SIGNAL
-      + PORT
-        + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
-        + FIXED ( 64215 337500 ) N
       + PORT
         + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
         + FIXED ( 64215 337500 ) N ;
     - gpio_pad[8] + NET gpio_pad[8] + SPECIAL + DIRECTION INOUT + USE SIGNAL
       + PORT
         + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
-        + FIXED ( 1935785 1482500 ) N
-      + PORT
-        + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
         + FIXED ( 1935785 1482500 ) N ;
     - gpio_pad[9] + NET gpio_pad[9] + SPECIAL + DIRECTION INOUT + USE SIGNAL
-      + PORT
-        + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
-        + FIXED ( 1935785 1355500 ) N
       + PORT
         + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
         + FIXED ( 1935785 1355500 ) N ;

@@ -4,7 +4,7 @@ PDK_ROOT ?= /path/to/pdk/sky130A
 TEE_COMMAND := 
 
 librelane : librelane_config.yaml src/core_wrapper.sv outputs logs outputs/chip_io_template.def
-	librelane $< --run-tag $(RUN_DIRNAME) --save-views-to outputs --manual-pdk --pdk-root $(PDK_ROOT) $(TEE_COMMAND)
+	librelane $< --run-tag $(RUN_DIRNAME) --save-views-to outputs --manual-pdk --overwrite --pdk-root $(PDK_ROOT) $(TEE_COMMAND)
 .PHONY: librelane
 
 # apply clean_def.py to chip_io.def to remove unneeded sections

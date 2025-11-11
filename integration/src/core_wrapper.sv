@@ -7,11 +7,16 @@ module core_wrapper #(
     parameter int ADDR_W   = 4
 ) (
     // Ports
-    inout  wire [NUM_GPIO-1:0] gpio_pad,
-    inout vccd, vssd, vddio, vssio,
+`ifdef USE_POWER_PINS
+    inout vccd, 
+    inout vssd, 
+    inout vddio, 
+    inout vssio, 
+`endif
     inout porb_h,
     inout por,
-    // Core-facing pad signals
+    // Pad signals
+    inout [NUM_GPIO-1:0] gpio_pad,
     input [NUM_GPIO-1:0] gpio_in,
     output [NUM_GPIO-1:0] gpio_out,
     // Pad configuration buses
