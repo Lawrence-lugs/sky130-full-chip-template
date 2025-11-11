@@ -33,7 +33,17 @@ module core_wrapper #(
     wire we                = gpio_in[2];
     wire [ADDR_W-1:0] addr = gpio_in[6:3];
     wire [DATA_W-1:0] wdata= gpio_in[10:7];
-    wire [DATA_W-1:0] rdata;
+    wire [DATA_W-1:0] rdata= gpio_out[10:7];
+
+    // All unused outputs tie to 0
+    assign gpio_out[NUM_GPIO-1:11] = '0;
+    assign gpio_out[6:0] = '0;
+    assign dm0[NUM_GPIO-1:0]      = '0;
+    assign dm1[NUM_GPIO-1:0]      = '0;
+    assign dm2[NUM_GPIO-1:0]      = '1;
+    assign oe_n[NUM_GPIO-1:0]     = '1; // Only data pins are outputs
+    assign hld_ovr[NUM_GPIO-1:0]  = '0;
+    assign ib_mode_sel[NUM_GPIO-1:0]= '0;
 
     // Instantiate core
     // No parameters in this instantiation because
