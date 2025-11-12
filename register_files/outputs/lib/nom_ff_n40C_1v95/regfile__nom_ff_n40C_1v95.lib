@@ -28,137 +28,101 @@ library (regfile) {
   type ("addr") {
     base_type : array;
     data_type : bit;
-    bit_width : 5;
-    bit_from : 4;
+    bit_width : 4;
+    bit_from : 3;
     bit_to : 0;
   }
   type ("rdata") {
     base_type : array;
     data_type : bit;
-    bit_width : 8;
-    bit_from : 7;
+    bit_width : 4;
+    bit_from : 3;
     bit_to : 0;
   }
   type ("wdata") {
     base_type : array;
     data_type : bit;
-    bit_width : 8;
-    bit_from : 7;
+    bit_width : 4;
+    bit_from : 3;
     bit_to : 0;
   }
 
   cell ("regfile") {
-    area : 23618.680 
+    area : 5938.176 
     is_macro_cell : true;
     pin("clk") {
       direction : input;
-      capacitance : 0.0025;
+      capacitance : 0.0028;
     }
     pin("nrst") {
       direction : input;
-      capacitance : 0.0026;
+      capacitance : 0.0027;
     }
     pin("we") {
       direction : input;
-      capacitance : 0.0029;
+      capacitance : 0.0030;
     }
     bus("addr") {
       bus_type : addr;
       direction : input;
       capacitance : 0.0000;
-    pin("addr[4]") {
-      direction : input;
-      capacitance : 0.0030;
-    }
     pin("addr[3]") {
       direction : input;
-      capacitance : 0.0035;
+      capacitance : 0.0029;
     }
     pin("addr[2]") {
       direction : input;
-      capacitance : 0.0033;
+      capacitance : 0.0030;
     }
     pin("addr[1]") {
       direction : input;
-      capacitance : 0.0034;
+      capacitance : 0.0031;
     }
     pin("addr[0]") {
       direction : input;
-      capacitance : 0.0034;
+      capacitance : 0.0028;
     }
     }
     bus("rdata") {
       bus_type : rdata;
       direction : output;
       capacitance : 0.0000;
-    pin("rdata[7]") {
-      direction : output;
-      capacitance : 0.0006;
-    }
-    pin("rdata[6]") {
-      direction : output;
-      capacitance : 0.0006;
-    }
-    pin("rdata[5]") {
-      direction : output;
-      capacitance : 0.0005;
-    }
-    pin("rdata[4]") {
-      direction : output;
-      capacitance : 0.0005;
-    }
     pin("rdata[3]") {
       direction : output;
-      capacitance : 0.0007;
+      capacitance : 0.0010;
     }
     pin("rdata[2]") {
       direction : output;
-      capacitance : 0.0008;
+      capacitance : 0.0010;
     }
     pin("rdata[1]") {
       direction : output;
-      capacitance : 0.0008;
+      capacitance : 0.0013;
     }
     pin("rdata[0]") {
       direction : output;
-      capacitance : 0.0008;
+      capacitance : 0.0007;
     }
     }
     bus("wdata") {
       bus_type : wdata;
       direction : input;
       capacitance : 0.0000;
-    pin("wdata[7]") {
-      direction : input;
-      capacitance : 0.0039;
-    }
-    pin("wdata[6]") {
-      direction : input;
-      capacitance : 0.0029;
-    }
-    pin("wdata[5]") {
-      direction : input;
-      capacitance : 0.0050;
-    }
-    pin("wdata[4]") {
-      direction : input;
-      capacitance : 0.0030;
-    }
     pin("wdata[3]") {
       direction : input;
-      capacitance : 0.0035;
+      capacitance : 0.0031;
     }
     pin("wdata[2]") {
       direction : input;
-      capacitance : 0.0023;
+      capacitance : 0.0032;
     }
     pin("wdata[1]") {
       direction : input;
-      capacitance : 0.0032;
+      capacitance : 0.0027;
     }
     pin("wdata[0]") {
       direction : input;
-      capacitance : 0.0044;
+      capacitance : 0.0030;
     }
     }
   }
