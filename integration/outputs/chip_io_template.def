@@ -6,7 +6,7 @@ UNITS DISTANCE MICRONS 1000 ;
 DIEAREA ( 0 0 ) ( 2000000 2000000 ) ;
 COMPONENTS 0 ;
 END COMPONENTS
-PINS 150 ;
+PINS 148 ;
     - dm0[0] + NET dm0[0] + SPECIAL + DIRECTION INPUT + USE SIGNAL
       + PORT
         + LAYER met2 ( -1200 -140 ) ( 1200 140 )
@@ -583,7 +583,13 @@ PINS 150 ;
       + PORT
         + LAYER met2 ( -1200 -140 ) ( 1200 140 )
         + FIXED ( 1790235 1393615 ) N ;
-    - por + NET por + SPECIAL + DIRECTION INPUT + USE SIGNAL
+    - vccd + NET vccd + SPECIAL + DIRECTION INOUT + USE POWER
+      + PORT
+        + LAYER met5 ( -2225 -635 ) ( 2225 635 )
+        + FIXED ( 1811210 809635 ) N
+      + PORT
+        + LAYER met5 ( -2225 -635 ) ( 2225 635 )
+        + FIXED ( 188790 1544635 ) N
       + PORT
         + LAYER met2 ( -1200 -140 ) ( 1200 140 )
         + FIXED ( 1790235 1356355 ) N
@@ -632,7 +638,10 @@ PINS 150 ;
       + PORT
         + LAYER met2 ( -1200 -140 ) ( 1200 140 )
         + FIXED ( 209765 1427355 ) N ;
-    - porb_h + NET porb_h + SPECIAL + DIRECTION INPUT + USE SIGNAL
+    - vddio + NET vddio + SPECIAL + DIRECTION INOUT + USE POWER
+      + PORT
+        + LAYER met5 ( -12475 -635 ) ( 12475 635 )
+        + FIXED ( 1882510 1700635 ) N
       + PORT
         + LAYER met2 ( -1200 -140 ) ( 1200 140 )
         + FIXED ( 1790235 1384415 ) N
@@ -729,17 +738,6 @@ PINS 150 ;
       + PORT
         + LAYER met2 ( -1200 -140 ) ( 1200 140 )
         + FIXED ( 209765 1433795 ) N ;
-    - vccd + NET vccd + SPECIAL + DIRECTION INOUT + USE POWER
-      + PORT
-        + LAYER met5 ( -2225 -635 ) ( 2225 635 )
-        + FIXED ( 1811210 809635 ) N
-      + PORT
-        + LAYER met5 ( -2225 -635 ) ( 2225 635 )
-        + FIXED ( 188790 1544635 ) N ;
-    - vddio + NET vddio + SPECIAL + DIRECTION INOUT + USE POWER
-      + PORT
-        + LAYER met5 ( -12475 -635 ) ( 12475 635 )
-        + FIXED ( 1882510 1700635 ) N ;
     - vssd + NET vssd + SPECIAL + DIRECTION INOUT + USE GROUND
       + PORT
         + LAYER met5 ( -2225 -635 ) ( 2225 635 )

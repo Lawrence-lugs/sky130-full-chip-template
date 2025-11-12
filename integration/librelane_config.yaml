@@ -1,6 +1,8 @@
 meta:
   version: 0
   flow: Classic
+  substituting_steps:
+    OpenROAD.FillInsertion: null # Inserting fills not needed yet, too heavy
 
 DESIGN_NAME: "core_wrapper"
 
@@ -17,7 +19,7 @@ FP_DEF_TEMPLATE: "dir::outputs/chip_io_template.def" # Floorplan from padring de
 MACROS:
   regfile:
     nl:
-    - "dir::../register_files/outputs/nl/regfile.nl.v"
+    - "dir::../register_files/outputs/pnl/regfile.pnl.v"
     lef:
     - "dir::../register_files/outputs/lef/regfile.lef"
     gds:
@@ -33,9 +35,9 @@ MACROS:
 # Power Distribution
 # FP_PDN_CFG: "dir::pdn_cfg.tcl" # Custom PDN config for most full-chip integrations
 VDD_NETS:
-- vccd
+  - vccd
 GND_NETS:
-- vssd
+  - vssd
 
 VERILOG_POWER_DEFINE: USE_POWER_PINS
 FP_PDN_CORE_RING: 1
@@ -49,6 +51,9 @@ FP_PDN_VWIDTH: 6.4
 FP_PDN_HWIDTH: 6.4
 FP_PDN_HSPACING: 3.2
 FP_PDN_VSPACING: 3.2
+
+# PDN_MACRO_CONNECTIONS:
+#   - "u_regfile vccd vssd vccd vssd"
 
 # CTS Settings
 CLOCK_NET: clk

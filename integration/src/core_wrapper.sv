@@ -13,8 +13,8 @@ module core_wrapper #(
     inout vddio, 
     inout vssio, 
 `endif
-    inout porb_h,
-    inout por,
+    // inout porb_h,
+    // inout por,
     // Pad signals
     inout [NUM_GPIO-1:0] gpio_pad,
     input [NUM_GPIO-1:0] gpio_in,
@@ -54,6 +54,10 @@ module core_wrapper #(
     // No parameters in this instantiation because
     // we are already using the gate-level netlist of the core.
     regfile u_regfile (
+`ifdef USE_POWER_PINS
+        .vccd (vccd),
+        .vssd (vssd),
+`endif
         .clk   (clk),
         .nrst  (nrst),
         .we    (we),

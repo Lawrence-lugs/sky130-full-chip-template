@@ -11,6 +11,9 @@ librelane : librelane_config.yaml src/core_wrapper.sv outputs logs outputs/chip_
 outputs/chip_io_template.def : ../or_chip_io/outputs/chip_io.def clean_def.py outputs
 	python3 clean_def.py $< $@
 
+.PHONY:def
+def:	outputs/chip_io_template.def
+
 outputs:
 	mkdir -p outputs
 
