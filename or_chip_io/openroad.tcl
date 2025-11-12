@@ -157,7 +157,6 @@ place_io_terminals -allow_non_top_layer */IB_MODE_SEL
 place_io_terminals -allow_non_top_layer */INP_DIS
 place_io_terminals -allow_non_top_layer */OE_N
 place_io_terminals -allow_non_top_layer */OUT
-place_io_terminals -allow_non_top_layer */PAD
 place_io_terminals -allow_non_top_layer */DM\[0\]
 place_io_terminals -allow_non_top_layer */DM\[1\]
 place_io_terminals -allow_non_top_layer */DM\[2\]

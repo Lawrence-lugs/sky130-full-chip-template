@@ -11,9 +11,9 @@ meta:
   flow: Classic
 
 VDD_NETS:
-- VDD
+- vccd
 GND_NETS:
-- VSS
+- vssd
 
 DESIGN_NAME: "regfile"
 VERILOG_FILES:

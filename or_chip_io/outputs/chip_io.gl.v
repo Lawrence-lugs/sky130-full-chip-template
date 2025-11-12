@@ -2,8 +2,8 @@
 
 (* dynports =  1  *)
 (* cells_not_processed =  1  *)
-(* src = "src/chip_io.sv:1.1-172.10" *)
-module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_out, dm2, dm1, dm0, oe_n, hld_ovr, ib_mode_sel);
+(* src = "src/chip_io.sv:1.1-178.10" *)
+module chip_io(vccd, vssd, vddio, vssio, gpio_pad, gpio_in, gpio_out, dm2, dm1, dm0, oe_n, hld_ovr, ib_mode_sel);
   (* src = "src/chip_io.sv:5.11-5.15" *)
   inout vccd;
   wire vccd;
@@ -16,51 +16,45 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
   (* src = "src/chip_io.sv:8.11-8.16" *)
   inout vssio;
   wire vssio;
-  (* src = "src/chip_io.sv:11.11-11.17" *)
-  input porb_h;
-  wire porb_h;
-  (* src = "src/chip_io.sv:12.11-12.14" *)
-  input por;
-  wire por;
-  (* src = "src/chip_io.sv:15.25-15.33" *)
+  (* src = "src/chip_io.sv:16.25-16.33" *)
   inout [15:0] gpio_pad;
   wire [15:0] gpio_pad;
-  (* src = "src/chip_io.sv:16.26-16.33" *)
+  (* src = "src/chip_io.sv:17.26-17.33" *)
   output [15:0] gpio_in;
   wire [15:0] gpio_in;
-  (* src = "src/chip_io.sv:17.25-17.33" *)
+  (* src = "src/chip_io.sv:18.25-18.33" *)
   input [15:0] gpio_out;
   wire [15:0] gpio_out;
-  (* src = "src/chip_io.sv:21.25-21.28" *)
+  (* src = "src/chip_io.sv:22.25-22.28" *)
   input [15:0] dm2;
   wire [15:0] dm2;
-  (* src = "src/chip_io.sv:22.25-22.28" *)
+  (* src = "src/chip_io.sv:23.25-23.28" *)
   input [15:0] dm1;
   wire [15:0] dm1;
-  (* src = "src/chip_io.sv:23.25-23.28" *)
+  (* src = "src/chip_io.sv:24.25-24.28" *)
   input [15:0] dm0;
   wire [15:0] dm0;
-  (* src = "src/chip_io.sv:24.25-24.29" *)
+  (* src = "src/chip_io.sv:25.25-25.29" *)
   input [15:0] oe_n;
   wire [15:0] oe_n;
-  (* src = "src/chip_io.sv:25.25-25.32" *)
+  (* src = "src/chip_io.sv:26.25-26.32" *)
   input [15:0] hld_ovr;
   wire [15:0] hld_ovr;
-  (* src = "src/chip_io.sv:26.25-26.36" *)
+  (* src = "src/chip_io.sv:27.25-27.36" *)
   input [15:0] ib_mode_sel;
   wire [15:0] ib_mode_sel;
-  (* src = "src/chip_io.sv:34.10-34.23" *)
-  wire analog_a_ring;
   (* src = "src/chip_io.sv:35.10-35.23" *)
+  wire analog_a_ring;
+  (* src = "src/chip_io.sv:36.10-36.23" *)
   wire analog_b_ring;
-  (* src = "src/chip_io.sv:38.24-38.30" *)
+  (* src = "src/chip_io.sv:39.24-39.30" *)
   wire [15:0] tielow;
-  (* src = "src/chip_io.sv:30.10-30.17" *)
-  wire vddio_q;
   (* src = "src/chip_io.sv:31.10-31.17" *)
+  wire vddio_q;
+  (* src = "src/chip_io.sv:32.10-32.17" *)
   wire vssio_q;
   (* module_not_derived = 32'd1 *)
-  (* src = "src/chip_io.sv:44.46-82.12" *)
+  (* src = "src/chip_io.sv:45.46-88.12" *)
   sky130_ef_io__gpiov2_pad_wrapped \gpio_pads[0].u_gpio_pad  (
     .AMUXBUS_A(analog_a_ring),
     .AMUXBUS_B(analog_b_ring),
@@ -68,16 +62,16 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .ANALOG_POL(vssd),
     .ANALOG_SEL(vssd),
     .DM({ dm2[0], dm1[0], dm0[0] }),
-    .ENABLE_H(porb_h),
+    .ENABLE_H(vddio),
     .ENABLE_INP_H(tielow[0]),
-    .ENABLE_VDDA_H(porb_h),
+    .ENABLE_VDDA_H(vddio),
     .ENABLE_VDDIO(vccd),
     .ENABLE_VSWITCH_H(vssio),
     .HLD_H_N(vddio),
     .HLD_OVR(hld_ovr[0]),
     .IB_MODE_SEL(ib_mode_sel[0]),
     .IN(gpio_in[0]),
-    .INP_DIS(por),
+    .INP_DIS(vccd),
     .OE_N(oe_n[0]),
     .OUT(gpio_out[0]),
     .PAD(gpio_pad[0]),
@@ -96,7 +90,7 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .VTRIP_SEL(vssd)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "src/chip_io.sv:44.46-82.12" *)
+  (* src = "src/chip_io.sv:45.46-88.12" *)
   sky130_ef_io__gpiov2_pad_wrapped \gpio_pads[10].u_gpio_pad  (
     .AMUXBUS_A(analog_a_ring),
     .AMUXBUS_B(analog_b_ring),
@@ -104,16 +98,16 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .ANALOG_POL(vssd),
     .ANALOG_SEL(vssd),
     .DM({ dm2[10], dm1[10], dm0[10] }),
-    .ENABLE_H(porb_h),
+    .ENABLE_H(vddio),
     .ENABLE_INP_H(tielow[10]),
-    .ENABLE_VDDA_H(porb_h),
+    .ENABLE_VDDA_H(vddio),
     .ENABLE_VDDIO(vccd),
     .ENABLE_VSWITCH_H(vssio),
     .HLD_H_N(vddio),
     .HLD_OVR(hld_ovr[10]),
     .IB_MODE_SEL(ib_mode_sel[10]),
     .IN(gpio_in[10]),
-    .INP_DIS(por),
+    .INP_DIS(vccd),
     .OE_N(oe_n[10]),
     .OUT(gpio_out[10]),
     .PAD(gpio_pad[10]),
@@ -132,7 +126,7 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .VTRIP_SEL(vssd)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "src/chip_io.sv:44.46-82.12" *)
+  (* src = "src/chip_io.sv:45.46-88.12" *)
   sky130_ef_io__gpiov2_pad_wrapped \gpio_pads[11].u_gpio_pad  (
     .AMUXBUS_A(analog_a_ring),
     .AMUXBUS_B(analog_b_ring),
@@ -140,16 +134,16 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .ANALOG_POL(vssd),
     .ANALOG_SEL(vssd),
     .DM({ dm2[11], dm1[11], dm0[11] }),
-    .ENABLE_H(porb_h),
+    .ENABLE_H(vddio),
     .ENABLE_INP_H(tielow[11]),
-    .ENABLE_VDDA_H(porb_h),
+    .ENABLE_VDDA_H(vddio),
     .ENABLE_VDDIO(vccd),
     .ENABLE_VSWITCH_H(vssio),
     .HLD_H_N(vddio),
     .HLD_OVR(hld_ovr[11]),
     .IB_MODE_SEL(ib_mode_sel[11]),
     .IN(gpio_in[11]),
-    .INP_DIS(por),
+    .INP_DIS(vccd),
     .OE_N(oe_n[11]),
     .OUT(gpio_out[11]),
     .PAD(gpio_pad[11]),
@@ -168,7 +162,7 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .VTRIP_SEL(vssd)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "src/chip_io.sv:44.46-82.12" *)
+  (* src = "src/chip_io.sv:45.46-88.12" *)
   sky130_ef_io__gpiov2_pad_wrapped \gpio_pads[12].u_gpio_pad  (
     .AMUXBUS_A(analog_a_ring),
     .AMUXBUS_B(analog_b_ring),
@@ -176,16 +170,16 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .ANALOG_POL(vssd),
     .ANALOG_SEL(vssd),
     .DM({ dm2[12], dm1[12], dm0[12] }),
-    .ENABLE_H(porb_h),
+    .ENABLE_H(vddio),
     .ENABLE_INP_H(tielow[12]),
-    .ENABLE_VDDA_H(porb_h),
+    .ENABLE_VDDA_H(vddio),
     .ENABLE_VDDIO(vccd),
     .ENABLE_VSWITCH_H(vssio),
     .HLD_H_N(vddio),
     .HLD_OVR(hld_ovr[12]),
     .IB_MODE_SEL(ib_mode_sel[12]),
     .IN(gpio_in[12]),
-    .INP_DIS(por),
+    .INP_DIS(vccd),
     .OE_N(oe_n[12]),
     .OUT(gpio_out[12]),
     .PAD(gpio_pad[12]),
@@ -204,7 +198,7 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .VTRIP_SEL(vssd)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "src/chip_io.sv:44.46-82.12" *)
+  (* src = "src/chip_io.sv:45.46-88.12" *)
   sky130_ef_io__gpiov2_pad_wrapped \gpio_pads[13].u_gpio_pad  (
     .AMUXBUS_A(analog_a_ring),
     .AMUXBUS_B(analog_b_ring),
@@ -212,16 +206,16 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .ANALOG_POL(vssd),
     .ANALOG_SEL(vssd),
     .DM({ dm2[13], dm1[13], dm0[13] }),
-    .ENABLE_H(porb_h),
+    .ENABLE_H(vddio),
     .ENABLE_INP_H(tielow[13]),
-    .ENABLE_VDDA_H(porb_h),
+    .ENABLE_VDDA_H(vddio),
     .ENABLE_VDDIO(vccd),
     .ENABLE_VSWITCH_H(vssio),
     .HLD_H_N(vddio),
     .HLD_OVR(hld_ovr[13]),
     .IB_MODE_SEL(ib_mode_sel[13]),
     .IN(gpio_in[13]),
-    .INP_DIS(por),
+    .INP_DIS(vccd),
     .OE_N(oe_n[13]),
     .OUT(gpio_out[13]),
     .PAD(gpio_pad[13]),
@@ -240,7 +234,7 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .VTRIP_SEL(vssd)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "src/chip_io.sv:44.46-82.12" *)
+  (* src = "src/chip_io.sv:45.46-88.12" *)
   sky130_ef_io__gpiov2_pad_wrapped \gpio_pads[14].u_gpio_pad  (
     .AMUXBUS_A(analog_a_ring),
     .AMUXBUS_B(analog_b_ring),
@@ -248,16 +242,16 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .ANALOG_POL(vssd),
     .ANALOG_SEL(vssd),
     .DM({ dm2[14], dm1[14], dm0[14] }),
-    .ENABLE_H(porb_h),
+    .ENABLE_H(vddio),
     .ENABLE_INP_H(tielow[14]),
-    .ENABLE_VDDA_H(porb_h),
+    .ENABLE_VDDA_H(vddio),
     .ENABLE_VDDIO(vccd),
     .ENABLE_VSWITCH_H(vssio),
     .HLD_H_N(vddio),
     .HLD_OVR(hld_ovr[14]),
     .IB_MODE_SEL(ib_mode_sel[14]),
     .IN(gpio_in[14]),
-    .INP_DIS(por),
+    .INP_DIS(vccd),
     .OE_N(oe_n[14]),
     .OUT(gpio_out[14]),
     .PAD(gpio_pad[14]),
@@ -276,7 +270,7 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .VTRIP_SEL(vssd)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "src/chip_io.sv:44.46-82.12" *)
+  (* src = "src/chip_io.sv:45.46-88.12" *)
   sky130_ef_io__gpiov2_pad_wrapped \gpio_pads[15].u_gpio_pad  (
     .AMUXBUS_A(analog_a_ring),
     .AMUXBUS_B(analog_b_ring),
@@ -284,16 +278,16 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .ANALOG_POL(vssd),
     .ANALOG_SEL(vssd),
     .DM({ dm2[15], dm1[15], dm0[15] }),
-    .ENABLE_H(porb_h),
+    .ENABLE_H(vddio),
     .ENABLE_INP_H(tielow[15]),
-    .ENABLE_VDDA_H(porb_h),
+    .ENABLE_VDDA_H(vddio),
     .ENABLE_VDDIO(vccd),
     .ENABLE_VSWITCH_H(vssio),
     .HLD_H_N(vddio),
     .HLD_OVR(hld_ovr[15]),
     .IB_MODE_SEL(ib_mode_sel[15]),
     .IN(gpio_in[15]),
-    .INP_DIS(por),
+    .INP_DIS(vccd),
     .OE_N(oe_n[15]),
     .OUT(gpio_out[15]),
     .PAD(gpio_pad[15]),
@@ -312,7 +306,7 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .VTRIP_SEL(vssd)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "src/chip_io.sv:44.46-82.12" *)
+  (* src = "src/chip_io.sv:45.46-88.12" *)
   sky130_ef_io__gpiov2_pad_wrapped \gpio_pads[1].u_gpio_pad  (
     .AMUXBUS_A(analog_a_ring),
     .AMUXBUS_B(analog_b_ring),
@@ -320,16 +314,16 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .ANALOG_POL(vssd),
     .ANALOG_SEL(vssd),
     .DM({ dm2[1], dm1[1], dm0[1] }),
-    .ENABLE_H(porb_h),
+    .ENABLE_H(vddio),
     .ENABLE_INP_H(tielow[1]),
-    .ENABLE_VDDA_H(porb_h),
+    .ENABLE_VDDA_H(vddio),
     .ENABLE_VDDIO(vccd),
     .ENABLE_VSWITCH_H(vssio),
     .HLD_H_N(vddio),
     .HLD_OVR(hld_ovr[1]),
     .IB_MODE_SEL(ib_mode_sel[1]),
     .IN(gpio_in[1]),
-    .INP_DIS(por),
+    .INP_DIS(vccd),
     .OE_N(oe_n[1]),
     .OUT(gpio_out[1]),
     .PAD(gpio_pad[1]),
@@ -348,7 +342,7 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .VTRIP_SEL(vssd)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "src/chip_io.sv:44.46-82.12" *)
+  (* src = "src/chip_io.sv:45.46-88.12" *)
   sky130_ef_io__gpiov2_pad_wrapped \gpio_pads[2].u_gpio_pad  (
     .AMUXBUS_A(analog_a_ring),
     .AMUXBUS_B(analog_b_ring),
@@ -356,16 +350,16 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .ANALOG_POL(vssd),
     .ANALOG_SEL(vssd),
     .DM({ dm2[2], dm1[2], dm0[2] }),
-    .ENABLE_H(porb_h),
+    .ENABLE_H(vddio),
     .ENABLE_INP_H(tielow[2]),
-    .ENABLE_VDDA_H(porb_h),
+    .ENABLE_VDDA_H(vddio),
     .ENABLE_VDDIO(vccd),
     .ENABLE_VSWITCH_H(vssio),
     .HLD_H_N(vddio),
     .HLD_OVR(hld_ovr[2]),
     .IB_MODE_SEL(ib_mode_sel[2]),
     .IN(gpio_in[2]),
-    .INP_DIS(por),
+    .INP_DIS(vccd),
     .OE_N(oe_n[2]),
     .OUT(gpio_out[2]),
     .PAD(gpio_pad[2]),
@@ -384,7 +378,7 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .VTRIP_SEL(vssd)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "src/chip_io.sv:44.46-82.12" *)
+  (* src = "src/chip_io.sv:45.46-88.12" *)
   sky130_ef_io__gpiov2_pad_wrapped \gpio_pads[3].u_gpio_pad  (
     .AMUXBUS_A(analog_a_ring),
     .AMUXBUS_B(analog_b_ring),
@@ -392,16 +386,16 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .ANALOG_POL(vssd),
     .ANALOG_SEL(vssd),
     .DM({ dm2[3], dm1[3], dm0[3] }),
-    .ENABLE_H(porb_h),
+    .ENABLE_H(vddio),
     .ENABLE_INP_H(tielow[3]),
-    .ENABLE_VDDA_H(porb_h),
+    .ENABLE_VDDA_H(vddio),
     .ENABLE_VDDIO(vccd),
     .ENABLE_VSWITCH_H(vssio),
     .HLD_H_N(vddio),
     .HLD_OVR(hld_ovr[3]),
     .IB_MODE_SEL(ib_mode_sel[3]),
     .IN(gpio_in[3]),
-    .INP_DIS(por),
+    .INP_DIS(vccd),
     .OE_N(oe_n[3]),
     .OUT(gpio_out[3]),
     .PAD(gpio_pad[3]),
@@ -420,7 +414,7 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .VTRIP_SEL(vssd)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "src/chip_io.sv:44.46-82.12" *)
+  (* src = "src/chip_io.sv:45.46-88.12" *)
   sky130_ef_io__gpiov2_pad_wrapped \gpio_pads[4].u_gpio_pad  (
     .AMUXBUS_A(analog_a_ring),
     .AMUXBUS_B(analog_b_ring),
@@ -428,16 +422,16 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .ANALOG_POL(vssd),
     .ANALOG_SEL(vssd),
     .DM({ dm2[4], dm1[4], dm0[4] }),
-    .ENABLE_H(porb_h),
+    .ENABLE_H(vddio),
     .ENABLE_INP_H(tielow[4]),
-    .ENABLE_VDDA_H(porb_h),
+    .ENABLE_VDDA_H(vddio),
     .ENABLE_VDDIO(vccd),
     .ENABLE_VSWITCH_H(vssio),
     .HLD_H_N(vddio),
     .HLD_OVR(hld_ovr[4]),
     .IB_MODE_SEL(ib_mode_sel[4]),
     .IN(gpio_in[4]),
-    .INP_DIS(por),
+    .INP_DIS(vccd),
     .OE_N(oe_n[4]),
     .OUT(gpio_out[4]),
     .PAD(gpio_pad[4]),
@@ -456,7 +450,7 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .VTRIP_SEL(vssd)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "src/chip_io.sv:44.46-82.12" *)
+  (* src = "src/chip_io.sv:45.46-88.12" *)
   sky130_ef_io__gpiov2_pad_wrapped \gpio_pads[5].u_gpio_pad  (
     .AMUXBUS_A(analog_a_ring),
     .AMUXBUS_B(analog_b_ring),
@@ -464,16 +458,16 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .ANALOG_POL(vssd),
     .ANALOG_SEL(vssd),
     .DM({ dm2[5], dm1[5], dm0[5] }),
-    .ENABLE_H(porb_h),
+    .ENABLE_H(vddio),
     .ENABLE_INP_H(tielow[5]),
-    .ENABLE_VDDA_H(porb_h),
+    .ENABLE_VDDA_H(vddio),
     .ENABLE_VDDIO(vccd),
     .ENABLE_VSWITCH_H(vssio),
     .HLD_H_N(vddio),
     .HLD_OVR(hld_ovr[5]),
     .IB_MODE_SEL(ib_mode_sel[5]),
     .IN(gpio_in[5]),
-    .INP_DIS(por),
+    .INP_DIS(vccd),
     .OE_N(oe_n[5]),
     .OUT(gpio_out[5]),
     .PAD(gpio_pad[5]),
@@ -492,7 +486,7 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .VTRIP_SEL(vssd)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "src/chip_io.sv:44.46-82.12" *)
+  (* src = "src/chip_io.sv:45.46-88.12" *)
   sky130_ef_io__gpiov2_pad_wrapped \gpio_pads[6].u_gpio_pad  (
     .AMUXBUS_A(analog_a_ring),
     .AMUXBUS_B(analog_b_ring),
@@ -500,16 +494,16 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .ANALOG_POL(vssd),
     .ANALOG_SEL(vssd),
     .DM({ dm2[6], dm1[6], dm0[6] }),
-    .ENABLE_H(porb_h),
+    .ENABLE_H(vddio),
     .ENABLE_INP_H(tielow[6]),
-    .ENABLE_VDDA_H(porb_h),
+    .ENABLE_VDDA_H(vddio),
     .ENABLE_VDDIO(vccd),
     .ENABLE_VSWITCH_H(vssio),
     .HLD_H_N(vddio),
     .HLD_OVR(hld_ovr[6]),
     .IB_MODE_SEL(ib_mode_sel[6]),
     .IN(gpio_in[6]),
-    .INP_DIS(por),
+    .INP_DIS(vccd),
     .OE_N(oe_n[6]),
     .OUT(gpio_out[6]),
     .PAD(gpio_pad[6]),
@@ -528,7 +522,7 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .VTRIP_SEL(vssd)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "src/chip_io.sv:44.46-82.12" *)
+  (* src = "src/chip_io.sv:45.46-88.12" *)
   sky130_ef_io__gpiov2_pad_wrapped \gpio_pads[7].u_gpio_pad  (
     .AMUXBUS_A(analog_a_ring),
     .AMUXBUS_B(analog_b_ring),
@@ -536,16 +530,16 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .ANALOG_POL(vssd),
     .ANALOG_SEL(vssd),
     .DM({ dm2[7], dm1[7], dm0[7] }),
-    .ENABLE_H(porb_h),
+    .ENABLE_H(vddio),
     .ENABLE_INP_H(tielow[7]),
-    .ENABLE_VDDA_H(porb_h),
+    .ENABLE_VDDA_H(vddio),
     .ENABLE_VDDIO(vccd),
     .ENABLE_VSWITCH_H(vssio),
     .HLD_H_N(vddio),
     .HLD_OVR(hld_ovr[7]),
     .IB_MODE_SEL(ib_mode_sel[7]),
     .IN(gpio_in[7]),
-    .INP_DIS(por),
+    .INP_DIS(vccd),
     .OE_N(oe_n[7]),
     .OUT(gpio_out[7]),
     .PAD(gpio_pad[7]),
@@ -564,7 +558,7 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .VTRIP_SEL(vssd)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "src/chip_io.sv:44.46-82.12" *)
+  (* src = "src/chip_io.sv:45.46-88.12" *)
   sky130_ef_io__gpiov2_pad_wrapped \gpio_pads[8].u_gpio_pad  (
     .AMUXBUS_A(analog_a_ring),
     .AMUXBUS_B(analog_b_ring),
@@ -572,16 +566,16 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .ANALOG_POL(vssd),
     .ANALOG_SEL(vssd),
     .DM({ dm2[8], dm1[8], dm0[8] }),
-    .ENABLE_H(porb_h),
+    .ENABLE_H(vddio),
     .ENABLE_INP_H(tielow[8]),
-    .ENABLE_VDDA_H(porb_h),
+    .ENABLE_VDDA_H(vddio),
     .ENABLE_VDDIO(vccd),
     .ENABLE_VSWITCH_H(vssio),
     .HLD_H_N(vddio),
     .HLD_OVR(hld_ovr[8]),
     .IB_MODE_SEL(ib_mode_sel[8]),
     .IN(gpio_in[8]),
-    .INP_DIS(por),
+    .INP_DIS(vccd),
     .OE_N(oe_n[8]),
     .OUT(gpio_out[8]),
     .PAD(gpio_pad[8]),
@@ -600,7 +594,7 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .VTRIP_SEL(vssd)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "src/chip_io.sv:44.46-82.12" *)
+  (* src = "src/chip_io.sv:45.46-88.12" *)
   sky130_ef_io__gpiov2_pad_wrapped \gpio_pads[9].u_gpio_pad  (
     .AMUXBUS_A(analog_a_ring),
     .AMUXBUS_B(analog_b_ring),
@@ -608,16 +602,16 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .ANALOG_POL(vssd),
     .ANALOG_SEL(vssd),
     .DM({ dm2[9], dm1[9], dm0[9] }),
-    .ENABLE_H(porb_h),
+    .ENABLE_H(vddio),
     .ENABLE_INP_H(tielow[9]),
-    .ENABLE_VDDA_H(porb_h),
+    .ENABLE_VDDA_H(vddio),
     .ENABLE_VDDIO(vccd),
     .ENABLE_VSWITCH_H(vssio),
     .HLD_H_N(vddio),
     .HLD_OVR(hld_ovr[9]),
     .IB_MODE_SEL(ib_mode_sel[9]),
     .IN(gpio_in[9]),
-    .INP_DIS(por),
+    .INP_DIS(vccd),
     .OE_N(oe_n[9]),
     .OUT(gpio_out[9]),
     .PAD(gpio_pad[9]),
@@ -636,7 +630,7 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .VTRIP_SEL(vssd)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "src/chip_io.sv:96.32-114.6" *)
+  (* src = "src/chip_io.sv:102.32-120.6" *)
   sky130_ef_io__vccd_lvc_pad u_vccd_pad (
     .AMUXBUS_A(analog_a_ring),
     .AMUXBUS_B(analog_b_ring),
@@ -657,7 +651,7 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .VSWITCH(vddio)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "src/chip_io.sv:137.33-152.6" *)
+  (* src = "src/chip_io.sv:143.33-158.6" *)
   sky130_ef_io__vddio_hvc_pad u_vddio_pad (
     .AMUXBUS_A(analog_a_ring),
     .AMUXBUS_B(analog_b_ring),
@@ -675,7 +669,7 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .VSWITCH(vddio)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "src/chip_io.sv:116.32-134.6" *)
+  (* src = "src/chip_io.sv:122.32-140.6" *)
   sky130_ef_io__vssd_lvc_pad u_vssd_pad (
     .AMUXBUS_A(analog_a_ring),
     .AMUXBUS_B(analog_b_ring),
@@ -696,7 +690,7 @@ module chip_io(vccd, vssd, vddio, vssio, porb_h, por, gpio_pad, gpio_in, gpio_ou
     .VSWITCH(vddio)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "src/chip_io.sv:155.33-170.6" *)
+  (* src = "src/chip_io.sv:161.33-176.6" *)
   sky130_ef_io__vssio_hvc_pad u_vssio_pad (
     .AMUXBUS_A(analog_a_ring),
     .AMUXBUS_B(analog_b_ring),

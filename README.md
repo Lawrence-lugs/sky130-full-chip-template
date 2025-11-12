@@ -4,12 +4,24 @@ This repository contains a template for a complete digital flow using the Sky130
 
 ## Base examples contained
 
-- A simple padring generation example in the `padring` directory.
-- A simple single-cycle RISCV core synthesis to GDS flow in the `ss_riscv` directory.
+- `yosys padring` - Yosys padring generation flow (has flaws)
+- `or_chip_io` - OpenROAD-based padring generation
+- `ss_riscv` - Single-cycle RISCV (librelane-clean).
+- `ue_riscv` - [Open-Source RISCV Core from UltraEmbedded](https://github.com/ultraembedded/riscv) which is librelane-clean.
+- `sim_with_pad` - Sample files for simulation with a padring.
+- `register_files` - Simple register file as a test core element.
+
+## Other folders
+
+- `doc` - pdf documentation
+- `references` - files taken from other sky130 projects as implementation reference
+- `.devcontainer` - files necessary to implement devcontainers
 
 ## Usage
 
 ### Run as devcontainer
+
+[![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/microsoft/vscode-remote-try-java)
 
 To run as devcontainer, you need to have:
 
@@ -60,21 +72,9 @@ and you should have the base environment.
 
 ## Running the code
 
-To run the existing codes, cd into the respective directories and run the make commands. For example, to run the padring generation code, do:
-
-```bash
-cd padring
-make
-```
-
-This will generate the padring layout in `padring.gds`.
-
-To run the single-cycle RISCV RTL-to-GDS flow with librelane, do:
-
-```bash
-cd ss_riscv
-make
-```
+Each sample folder should either have its own README.md or its own Makefile.
+Please either run `make` or following the instructions in `README.md`.
+If an example has neither, please create an issue.
 
 ## Librelane Scripts Directory
 
@@ -82,7 +82,8 @@ If you need to inspect the scripts that Librelane uses internally, please see `/
 
 ## TODO
 
-- [ ] RISCV + Padring
 - [x] Librelane-clean RISCV
-- [ ] Devcontainer workflow
-- [ ] Make workflow
+- [x] OpenROAD Padring Generation
+- [ ] Core + Padring
+- [ ] Chip LVS
+- [ ] Github Workflows

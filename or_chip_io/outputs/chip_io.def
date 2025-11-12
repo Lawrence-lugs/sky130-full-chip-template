@@ -2400,7 +2400,7 @@ COMPONENTS 1831 ;
     - vccd sky130_ef_io__vccd_lvc_pad + FIXED ( 1802035 809000 ) E ;
     - vssd sky130_ef_io__vssd_lvc_pad + FIXED ( 1802035 936000 ) E ;
 END COMPONENTS
-PINS 150 ;
+PINS 148 ;
     - dm0[0] + NET dm0[0] + SPECIAL + DIRECTION INPUT + USE SIGNAL
       + PORT
         + LAYER met2 ( -1200 -140 ) ( 1200 140 )
@@ -2724,112 +2724,64 @@ PINS 150 ;
     - gpio_pad[0] + NET gpio_pad[0] + SPECIAL + DIRECTION INOUT + USE SIGNAL
       + PORT
         + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
-        + FIXED ( 64215 1426500 ) N
-      + PORT
-        + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
         + FIXED ( 64215 1426500 ) N ;
     - gpio_pad[10] + NET gpio_pad[10] + SPECIAL + DIRECTION INOUT + USE SIGNAL
-      + PORT
-        + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
-        + FIXED ( 1935785 1228500 ) N
       + PORT
         + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
         + FIXED ( 1935785 1228500 ) N ;
     - gpio_pad[11] + NET gpio_pad[11] + SPECIAL + DIRECTION INOUT + USE SIGNAL
       + PORT
         + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
-        + FIXED ( 1935785 1101500 ) N
-      + PORT
-        + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
         + FIXED ( 1935785 1101500 ) N ;
     - gpio_pad[12] + NET gpio_pad[12] + SPECIAL + DIRECTION INOUT + USE SIGNAL
-      + PORT
-        + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
-        + FIXED ( 1935785 719500 ) N
       + PORT
         + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
         + FIXED ( 1935785 719500 ) N ;
     - gpio_pad[13] + NET gpio_pad[13] + SPECIAL + DIRECTION INOUT + USE SIGNAL
       + PORT
         + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
-        + FIXED ( 1935785 592500 ) N
-      + PORT
-        + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
         + FIXED ( 1935785 592500 ) N ;
     - gpio_pad[14] + NET gpio_pad[14] + SPECIAL + DIRECTION INOUT + USE SIGNAL
-      + PORT
-        + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
-        + FIXED ( 1935785 464500 ) N
       + PORT
         + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
         + FIXED ( 1935785 464500 ) N ;
     - gpio_pad[15] + NET gpio_pad[15] + SPECIAL + DIRECTION INOUT + USE SIGNAL
       + PORT
         + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
-        + FIXED ( 1935785 337500 ) N
-      + PORT
-        + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
         + FIXED ( 1935785 337500 ) N ;
     - gpio_pad[1] + NET gpio_pad[1] + SPECIAL + DIRECTION INOUT + USE SIGNAL
-      + PORT
-        + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
-        + FIXED ( 64215 1270500 ) N
       + PORT
         + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
         + FIXED ( 64215 1270500 ) N ;
     - gpio_pad[2] + NET gpio_pad[2] + SPECIAL + DIRECTION INOUT + USE SIGNAL
       + PORT
         + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
-        + FIXED ( 64215 1115500 ) N
-      + PORT
-        + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
         + FIXED ( 64215 1115500 ) N ;
     - gpio_pad[3] + NET gpio_pad[3] + SPECIAL + DIRECTION INOUT + USE SIGNAL
-      + PORT
-        + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
-        + FIXED ( 64215 959500 ) N
       + PORT
         + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
         + FIXED ( 64215 959500 ) N ;
     - gpio_pad[4] + NET gpio_pad[4] + SPECIAL + DIRECTION INOUT + USE SIGNAL
       + PORT
         + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
-        + FIXED ( 64215 804500 ) N
-      + PORT
-        + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
         + FIXED ( 64215 804500 ) N ;
     - gpio_pad[5] + NET gpio_pad[5] + SPECIAL + DIRECTION INOUT + USE SIGNAL
-      + PORT
-        + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
-        + FIXED ( 64215 648500 ) N
       + PORT
         + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
         + FIXED ( 64215 648500 ) N ;
     - gpio_pad[6] + NET gpio_pad[6] + SPECIAL + DIRECTION INOUT + USE SIGNAL
       + PORT
         + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
-        + FIXED ( 64215 493500 ) N
-      + PORT
-        + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
         + FIXED ( 64215 493500 ) N ;
     - gpio_pad[7] + NET gpio_pad[7] + SPECIAL + DIRECTION INOUT + USE SIGNAL
-      + PORT
-        + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
-        + FIXED ( 64215 337500 ) N
       + PORT
         + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
         + FIXED ( 64215 337500 ) N ;
     - gpio_pad[8] + NET gpio_pad[8] + SPECIAL + DIRECTION INOUT + USE SIGNAL
       + PORT
         + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
-        + FIXED ( 1935785 1482500 ) N
-      + PORT
-        + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
         + FIXED ( 1935785 1482500 ) N ;
     - gpio_pad[9] + NET gpio_pad[9] + SPECIAL + DIRECTION INOUT + USE SIGNAL
-      + PORT
-        + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
-        + FIXED ( 1935785 1355500 ) N
       + PORT
         + LAYER met5 ( -31225 -31300 ) ( 31225 31300 )
         + FIXED ( 1935785 1355500 ) N ;
@@ -3025,7 +2977,13 @@ PINS 150 ;
       + PORT
         + LAYER met2 ( -1200 -140 ) ( 1200 140 )
         + FIXED ( 1790235 1393615 ) N ;
-    - por + NET por + SPECIAL + DIRECTION INPUT + USE SIGNAL
+    - vccd + NET vccd + SPECIAL + DIRECTION INOUT + USE POWER
+      + PORT
+        + LAYER met5 ( -2225 -635 ) ( 2225 635 )
+        + FIXED ( 1811210 809635 ) N
+      + PORT
+        + LAYER met5 ( -2225 -635 ) ( 2225 635 )
+        + FIXED ( 188790 1544635 ) N
       + PORT
         + LAYER met2 ( -1200 -140 ) ( 1200 140 )
         + FIXED ( 1790235 1356355 ) N
@@ -3074,7 +3032,10 @@ PINS 150 ;
       + PORT
         + LAYER met2 ( -1200 -140 ) ( 1200 140 )
         + FIXED ( 209765 1427355 ) N ;
-    - porb_h + NET porb_h + SPECIAL + DIRECTION INPUT + USE SIGNAL
+    - vddio + NET vddio + SPECIAL + DIRECTION INOUT + USE POWER
+      + PORT
+        + LAYER met5 ( -12475 -635 ) ( 12475 635 )
+        + FIXED ( 1882510 1700635 ) N
       + PORT
         + LAYER met2 ( -1200 -140 ) ( 1200 140 )
         + FIXED ( 1790235 1384415 ) N
@@ -3171,17 +3132,6 @@ PINS 150 ;
       + PORT
         + LAYER met2 ( -1200 -140 ) ( 1200 140 )
         + FIXED ( 209765 1433795 ) N ;
-    - vccd + NET vccd + SPECIAL + DIRECTION INOUT + USE POWER
-      + PORT
-        + LAYER met5 ( -2225 -635 ) ( 2225 635 )
-        + FIXED ( 1811210 809635 ) N
-      + PORT
-        + LAYER met5 ( -2225 -635 ) ( 2225 635 )
-        + FIXED ( 188790 1544635 ) N ;
-    - vddio + NET vddio + SPECIAL + DIRECTION INOUT + USE POWER
-      + PORT
-        + LAYER met5 ( -12475 -635 ) ( 12475 635 )
-        + FIXED ( 1882510 1700635 ) N ;
     - vssd + NET vssd + SPECIAL + DIRECTION INOUT + USE GROUND
       + PORT
         + LAYER met5 ( -2225 -635 ) ( 2225 635 )
@@ -3194,7 +3144,7 @@ PINS 150 ;
         + LAYER met5 ( -2225 -635 ) ( 2225 635 )
         + FIXED ( 1828160 1573635 ) N ;
 END PINS
-SPECIALNETS 154 ;
+SPECIALNETS 152 ;
     - analog_a_ring ( IO_FILL_IO_SOUTH_0_1540 AMUXBUS_A ) ( IO_FILL_IO_SOUTH_0_1520 AMUXBUS_A ) ( IO_FILL_IO_SOUTH_0_1500 AMUXBUS_A ) ( IO_FILL_IO_SOUTH_0_1480 AMUXBUS_A ) ( IO_FILL_IO_SOUTH_0_1460 AMUXBUS_A ) ( IO_FILL_IO_SOUTH_0_1440 AMUXBUS_A ) ( IO_FILL_IO_SOUTH_0_1420 AMUXBUS_A )
       ( IO_FILL_IO_SOUTH_0_1400 AMUXBUS_A ) ( IO_FILL_IO_SOUTH_0_1380 AMUXBUS_A ) ( IO_FILL_IO_SOUTH_0_1360 AMUXBUS_A ) ( IO_FILL_IO_SOUTH_0_1340 AMUXBUS_A ) ( IO_FILL_IO_SOUTH_0_1320 AMUXBUS_A ) ( IO_FILL_IO_SOUTH_0_1300 AMUXBUS_A ) ( IO_FILL_IO_SOUTH_0_1280 AMUXBUS_A ) ( IO_FILL_IO_SOUTH_0_1260 AMUXBUS_A )
       ( IO_FILL_IO_SOUTH_0_1240 AMUXBUS_A ) ( IO_FILL_IO_SOUTH_0_1220 AMUXBUS_A ) ( IO_FILL_IO_SOUTH_0_1200 AMUXBUS_A ) ( IO_FILL_IO_SOUTH_0_1180 AMUXBUS_A ) ( IO_FILL_IO_SOUTH_0_1160 AMUXBUS_A ) ( IO_FILL_IO_SOUTH_0_1140 AMUXBUS_A ) ( IO_FILL_IO_SOUTH_0_1120 AMUXBUS_A ) ( IO_FILL_IO_SOUTH_0_1100 AMUXBUS_A )
@@ -3797,14 +3747,6 @@ SPECIALNETS 154 ;
     - oe_n[7] ( PIN oe_n[7] ) ( gpio_pads\[7\].u_gpio_pad OE_N ) + USE SIGNAL ;
     - oe_n[8] ( PIN oe_n[8] ) ( gpio_pads\[8\].u_gpio_pad OE_N ) + USE SIGNAL ;
     - oe_n[9] ( PIN oe_n[9] ) ( gpio_pads\[9\].u_gpio_pad OE_N ) + USE SIGNAL ;
-    - por ( PIN por ) ( gpio_pads\[9\].u_gpio_pad INP_DIS ) ( gpio_pads\[8\].u_gpio_pad INP_DIS ) ( gpio_pads\[7\].u_gpio_pad INP_DIS ) ( gpio_pads\[6\].u_gpio_pad INP_DIS ) ( gpio_pads\[5\].u_gpio_pad INP_DIS ) ( gpio_pads\[4\].u_gpio_pad INP_DIS )
-      ( gpio_pads\[3\].u_gpio_pad INP_DIS ) ( gpio_pads\[2\].u_gpio_pad INP_DIS ) ( gpio_pads\[1\].u_gpio_pad INP_DIS ) ( gpio_pads\[15\].u_gpio_pad INP_DIS ) ( gpio_pads\[14\].u_gpio_pad INP_DIS ) ( gpio_pads\[13\].u_gpio_pad INP_DIS ) ( gpio_pads\[12\].u_gpio_pad INP_DIS ) ( gpio_pads\[11\].u_gpio_pad INP_DIS )
-      ( gpio_pads\[10\].u_gpio_pad INP_DIS ) ( gpio_pads\[0\].u_gpio_pad INP_DIS ) + USE SIGNAL ;
-    - porb_h ( PIN porb_h ) ( gpio_pads\[9\].u_gpio_pad ENABLE_VDDA_H ) ( gpio_pads\[9\].u_gpio_pad ENABLE_H ) ( gpio_pads\[8\].u_gpio_pad ENABLE_VDDA_H ) ( gpio_pads\[8\].u_gpio_pad ENABLE_H ) ( gpio_pads\[7\].u_gpio_pad ENABLE_VDDA_H ) ( gpio_pads\[7\].u_gpio_pad ENABLE_H )
-      ( gpio_pads\[6\].u_gpio_pad ENABLE_VDDA_H ) ( gpio_pads\[6\].u_gpio_pad ENABLE_H ) ( gpio_pads\[5\].u_gpio_pad ENABLE_VDDA_H ) ( gpio_pads\[5\].u_gpio_pad ENABLE_H ) ( gpio_pads\[4\].u_gpio_pad ENABLE_VDDA_H ) ( gpio_pads\[4\].u_gpio_pad ENABLE_H ) ( gpio_pads\[3\].u_gpio_pad ENABLE_VDDA_H ) ( gpio_pads\[3\].u_gpio_pad ENABLE_H )
-      ( gpio_pads\[2\].u_gpio_pad ENABLE_VDDA_H ) ( gpio_pads\[2\].u_gpio_pad ENABLE_H ) ( gpio_pads\[1\].u_gpio_pad ENABLE_VDDA_H ) ( gpio_pads\[1\].u_gpio_pad ENABLE_H ) ( gpio_pads\[15\].u_gpio_pad ENABLE_VDDA_H ) ( gpio_pads\[15\].u_gpio_pad ENABLE_H ) ( gpio_pads\[14\].u_gpio_pad ENABLE_VDDA_H ) ( gpio_pads\[14\].u_gpio_pad ENABLE_H )
-      ( gpio_pads\[13\].u_gpio_pad ENABLE_VDDA_H ) ( gpio_pads\[13\].u_gpio_pad ENABLE_H ) ( gpio_pads\[12\].u_gpio_pad ENABLE_VDDA_H ) ( gpio_pads\[12\].u_gpio_pad ENABLE_H ) ( gpio_pads\[11\].u_gpio_pad ENABLE_VDDA_H ) ( gpio_pads\[11\].u_gpio_pad ENABLE_H ) ( gpio_pads\[10\].u_gpio_pad ENABLE_VDDA_H ) ( gpio_pads\[10\].u_gpio_pad ENABLE_H )
-      ( gpio_pads\[0\].u_gpio_pad ENABLE_VDDA_H ) ( gpio_pads\[0\].u_gpio_pad ENABLE_H ) + USE SIGNAL ;
     - vccd ( PIN vccd ) ( IO_FILL_IO_SOUTH_0_1540 VCCD ) ( IO_FILL_IO_SOUTH_0_1540 VCCHIB ) ( IO_FILL_IO_SOUTH_0_1520 VCCD ) ( IO_FILL_IO_SOUTH_0_1520 VCCHIB ) ( IO_FILL_IO_SOUTH_0_1500 VCCD ) ( IO_FILL_IO_SOUTH_0_1500 VCCHIB )
       ( IO_FILL_IO_SOUTH_0_1480 VCCD ) ( IO_FILL_IO_SOUTH_0_1480 VCCHIB ) ( IO_FILL_IO_SOUTH_0_1460 VCCD ) ( IO_FILL_IO_SOUTH_0_1460 VCCHIB ) ( IO_FILL_IO_SOUTH_0_1440 VCCD ) ( IO_FILL_IO_SOUTH_0_1440 VCCHIB ) ( IO_FILL_IO_SOUTH_0_1420 VCCD ) ( IO_FILL_IO_SOUTH_0_1420 VCCHIB )
       ( IO_FILL_IO_SOUTH_0_1400 VCCD ) ( IO_FILL_IO_SOUTH_0_1400 VCCHIB ) ( IO_FILL_IO_SOUTH_0_1380 VCCD ) ( IO_FILL_IO_SOUTH_0_1380 VCCHIB ) ( IO_FILL_IO_SOUTH_0_1360 VCCD ) ( IO_FILL_IO_SOUTH_0_1360 VCCHIB ) ( IO_FILL_IO_SOUTH_0_1340 VCCD ) ( IO_FILL_IO_SOUTH_0_1340 VCCHIB )
@@ -4259,13 +4201,15 @@ SPECIALNETS 154 ;
       ( IO_FILL_IO_EAST_3_0 VCCHIB ) ( IO_FILL_IO_EAST_3_0 VCCD ) ( IO_FILL_IO_EAST_2_47 VCCHIB ) ( IO_FILL_IO_EAST_2_47 VCCD ) ( IO_FILL_IO_EAST_4_0 VCCHIB ) ( IO_FILL_IO_EAST_4_0 VCCD ) ( IO_FILL_IO_EAST_3_46 VCCHIB ) ( IO_FILL_IO_EAST_3_46 VCCD )
       ( IO_FILL_IO_EAST_7_0 VCCHIB ) ( IO_FILL_IO_EAST_7_0 VCCD ) ( IO_FILL_IO_EAST_6_52 VCCHIB ) ( IO_FILL_IO_EAST_6_52 VCCD ) ( IO_FILL_IO_EAST_8_0 VCCHIB ) ( IO_FILL_IO_EAST_8_0 VCCD ) ( IO_FILL_IO_EAST_7_46 VCCHIB ) ( IO_FILL_IO_EAST_7_46 VCCD )
       ( u_vssio_pad VCCHIB ) ( u_vssio_pad VCCD ) ( u_vssd_pad VCCHIB ) ( u_vssd_pad VCCD ) ( u_vddio_pad VCCHIB ) ( u_vddio_pad VCCD ) ( u_vccd_pad VCCHIB ) ( u_vccd_pad VCCD )
-      ( u_vccd_pad DRN_LVC2 ) ( u_vccd_pad DRN_LVC1 ) ( gpio_pads\[9\].u_gpio_pad VCCHIB ) ( gpio_pads\[9\].u_gpio_pad VCCD ) ( gpio_pads\[9\].u_gpio_pad ENABLE_VDDIO ) ( gpio_pads\[8\].u_gpio_pad VCCHIB ) ( gpio_pads\[8\].u_gpio_pad VCCD ) ( gpio_pads\[8\].u_gpio_pad ENABLE_VDDIO )
-      ( gpio_pads\[7\].u_gpio_pad VCCHIB ) ( gpio_pads\[7\].u_gpio_pad VCCD ) ( gpio_pads\[7\].u_gpio_pad ENABLE_VDDIO ) ( gpio_pads\[6\].u_gpio_pad VCCHIB ) ( gpio_pads\[6\].u_gpio_pad VCCD ) ( gpio_pads\[6\].u_gpio_pad ENABLE_VDDIO ) ( gpio_pads\[5\].u_gpio_pad VCCHIB ) ( gpio_pads\[5\].u_gpio_pad VCCD )
-      ( gpio_pads\[5\].u_gpio_pad ENABLE_VDDIO ) ( gpio_pads\[4\].u_gpio_pad VCCHIB ) ( gpio_pads\[4\].u_gpio_pad VCCD ) ( gpio_pads\[4\].u_gpio_pad ENABLE_VDDIO ) ( gpio_pads\[3\].u_gpio_pad VCCHIB ) ( gpio_pads\[3\].u_gpio_pad VCCD ) ( gpio_pads\[3\].u_gpio_pad ENABLE_VDDIO ) ( gpio_pads\[2\].u_gpio_pad VCCHIB )
-      ( gpio_pads\[2\].u_gpio_pad VCCD ) ( gpio_pads\[2\].u_gpio_pad ENABLE_VDDIO ) ( gpio_pads\[1\].u_gpio_pad VCCHIB ) ( gpio_pads\[1\].u_gpio_pad VCCD ) ( gpio_pads\[1\].u_gpio_pad ENABLE_VDDIO ) ( gpio_pads\[15\].u_gpio_pad VCCHIB ) ( gpio_pads\[15\].u_gpio_pad VCCD ) ( gpio_pads\[15\].u_gpio_pad ENABLE_VDDIO )
-      ( gpio_pads\[14\].u_gpio_pad VCCHIB ) ( gpio_pads\[14\].u_gpio_pad VCCD ) ( gpio_pads\[14\].u_gpio_pad ENABLE_VDDIO ) ( gpio_pads\[13\].u_gpio_pad VCCHIB ) ( gpio_pads\[13\].u_gpio_pad VCCD ) ( gpio_pads\[13\].u_gpio_pad ENABLE_VDDIO ) ( gpio_pads\[12\].u_gpio_pad VCCHIB ) ( gpio_pads\[12\].u_gpio_pad VCCD )
-      ( gpio_pads\[12\].u_gpio_pad ENABLE_VDDIO ) ( gpio_pads\[11\].u_gpio_pad VCCHIB ) ( gpio_pads\[11\].u_gpio_pad VCCD ) ( gpio_pads\[11\].u_gpio_pad ENABLE_VDDIO ) ( gpio_pads\[10\].u_gpio_pad VCCHIB ) ( gpio_pads\[10\].u_gpio_pad VCCD ) ( gpio_pads\[10\].u_gpio_pad ENABLE_VDDIO ) ( gpio_pads\[0\].u_gpio_pad VCCHIB )
-      ( gpio_pads\[0\].u_gpio_pad VCCD ) ( gpio_pads\[0\].u_gpio_pad ENABLE_VDDIO ) + USE POWER ;
+      ( u_vccd_pad DRN_LVC2 ) ( u_vccd_pad DRN_LVC1 ) ( gpio_pads\[9\].u_gpio_pad VCCHIB ) ( gpio_pads\[9\].u_gpio_pad VCCD ) ( gpio_pads\[9\].u_gpio_pad INP_DIS ) ( gpio_pads\[9\].u_gpio_pad ENABLE_VDDIO ) ( gpio_pads\[8\].u_gpio_pad VCCHIB ) ( gpio_pads\[8\].u_gpio_pad VCCD )
+      ( gpio_pads\[8\].u_gpio_pad INP_DIS ) ( gpio_pads\[8\].u_gpio_pad ENABLE_VDDIO ) ( gpio_pads\[7\].u_gpio_pad VCCHIB ) ( gpio_pads\[7\].u_gpio_pad VCCD ) ( gpio_pads\[7\].u_gpio_pad INP_DIS ) ( gpio_pads\[7\].u_gpio_pad ENABLE_VDDIO ) ( gpio_pads\[6\].u_gpio_pad VCCHIB ) ( gpio_pads\[6\].u_gpio_pad VCCD )
+      ( gpio_pads\[6\].u_gpio_pad INP_DIS ) ( gpio_pads\[6\].u_gpio_pad ENABLE_VDDIO ) ( gpio_pads\[5\].u_gpio_pad VCCHIB ) ( gpio_pads\[5\].u_gpio_pad VCCD ) ( gpio_pads\[5\].u_gpio_pad INP_DIS ) ( gpio_pads\[5\].u_gpio_pad ENABLE_VDDIO ) ( gpio_pads\[4\].u_gpio_pad VCCHIB ) ( gpio_pads\[4\].u_gpio_pad VCCD )
+      ( gpio_pads\[4\].u_gpio_pad INP_DIS ) ( gpio_pads\[4\].u_gpio_pad ENABLE_VDDIO ) ( gpio_pads\[3\].u_gpio_pad VCCHIB ) ( gpio_pads\[3\].u_gpio_pad VCCD ) ( gpio_pads\[3\].u_gpio_pad INP_DIS ) ( gpio_pads\[3\].u_gpio_pad ENABLE_VDDIO ) ( gpio_pads\[2\].u_gpio_pad VCCHIB ) ( gpio_pads\[2\].u_gpio_pad VCCD )
+      ( gpio_pads\[2\].u_gpio_pad INP_DIS ) ( gpio_pads\[2\].u_gpio_pad ENABLE_VDDIO ) ( gpio_pads\[1\].u_gpio_pad VCCHIB ) ( gpio_pads\[1\].u_gpio_pad VCCD ) ( gpio_pads\[1\].u_gpio_pad INP_DIS ) ( gpio_pads\[1\].u_gpio_pad ENABLE_VDDIO ) ( gpio_pads\[15\].u_gpio_pad VCCHIB ) ( gpio_pads\[15\].u_gpio_pad VCCD )
+      ( gpio_pads\[15\].u_gpio_pad INP_DIS ) ( gpio_pads\[15\].u_gpio_pad ENABLE_VDDIO ) ( gpio_pads\[14\].u_gpio_pad VCCHIB ) ( gpio_pads\[14\].u_gpio_pad VCCD ) ( gpio_pads\[14\].u_gpio_pad INP_DIS ) ( gpio_pads\[14\].u_gpio_pad ENABLE_VDDIO ) ( gpio_pads\[13\].u_gpio_pad VCCHIB ) ( gpio_pads\[13\].u_gpio_pad VCCD )
+      ( gpio_pads\[13\].u_gpio_pad INP_DIS ) ( gpio_pads\[13\].u_gpio_pad ENABLE_VDDIO ) ( gpio_pads\[12\].u_gpio_pad VCCHIB ) ( gpio_pads\[12\].u_gpio_pad VCCD ) ( gpio_pads\[12\].u_gpio_pad INP_DIS ) ( gpio_pads\[12\].u_gpio_pad ENABLE_VDDIO ) ( gpio_pads\[11\].u_gpio_pad VCCHIB ) ( gpio_pads\[11\].u_gpio_pad VCCD )
+      ( gpio_pads\[11\].u_gpio_pad INP_DIS ) ( gpio_pads\[11\].u_gpio_pad ENABLE_VDDIO ) ( gpio_pads\[10\].u_gpio_pad VCCHIB ) ( gpio_pads\[10\].u_gpio_pad VCCD ) ( gpio_pads\[10\].u_gpio_pad INP_DIS ) ( gpio_pads\[10\].u_gpio_pad ENABLE_VDDIO ) ( gpio_pads\[0\].u_gpio_pad VCCHIB ) ( gpio_pads\[0\].u_gpio_pad VCCD )
+      ( gpio_pads\[0\].u_gpio_pad INP_DIS ) ( gpio_pads\[0\].u_gpio_pad ENABLE_VDDIO ) + USE POWER ;
     - vddio ( PIN vddio ) ( IO_FILL_IO_SOUTH_0_1540 VDDIO ) ( IO_FILL_IO_SOUTH_0_1540 VSWITCH ) ( IO_FILL_IO_SOUTH_0_1540 VDDA ) ( IO_FILL_IO_SOUTH_0_1520 VDDIO ) ( IO_FILL_IO_SOUTH_0_1520 VSWITCH ) ( IO_FILL_IO_SOUTH_0_1520 VDDA )
       ( IO_FILL_IO_SOUTH_0_1500 VDDIO ) ( IO_FILL_IO_SOUTH_0_1500 VSWITCH ) ( IO_FILL_IO_SOUTH_0_1500 VDDA ) ( IO_FILL_IO_SOUTH_0_1480 VDDIO ) ( IO_FILL_IO_SOUTH_0_1480 VSWITCH ) ( IO_FILL_IO_SOUTH_0_1480 VDDA ) ( IO_FILL_IO_SOUTH_0_1460 VDDIO ) ( IO_FILL_IO_SOUTH_0_1460 VSWITCH )
       ( IO_FILL_IO_SOUTH_0_1460 VDDA ) ( IO_FILL_IO_SOUTH_0_1440 VDDIO ) ( IO_FILL_IO_SOUTH_0_1440 VSWITCH ) ( IO_FILL_IO_SOUTH_0_1440 VDDA ) ( IO_FILL_IO_SOUTH_0_1420 VDDIO ) ( IO_FILL_IO_SOUTH_0_1420 VSWITCH ) ( IO_FILL_IO_SOUTH_0_1420 VDDA ) ( IO_FILL_IO_SOUTH_0_1400 VDDIO )
@@ -4947,15 +4891,19 @@ SPECIALNETS 154 ;
       ( IO_FILL_IO_EAST_7_0 VDDIO ) ( IO_FILL_IO_EAST_7_0 VDDA ) ( IO_FILL_IO_EAST_6_52 VSWITCH ) ( IO_FILL_IO_EAST_6_52 VDDIO ) ( IO_FILL_IO_EAST_6_52 VDDA ) ( IO_FILL_IO_EAST_8_0 VSWITCH ) ( IO_FILL_IO_EAST_8_0 VDDIO ) ( IO_FILL_IO_EAST_8_0 VDDA )
       ( IO_FILL_IO_EAST_7_46 VSWITCH ) ( IO_FILL_IO_EAST_7_46 VDDIO ) ( IO_FILL_IO_EAST_7_46 VDDA ) ( u_vssio_pad VSWITCH ) ( u_vssio_pad VDDIO ) ( u_vssio_pad VDDA ) ( u_vssio_pad DRN_HVC ) ( u_vssd_pad VSWITCH )
       ( u_vssd_pad VDDIO ) ( u_vssd_pad VDDA ) ( u_vddio_pad VSWITCH ) ( u_vddio_pad VDDIO ) ( u_vddio_pad VDDA ) ( u_vddio_pad DRN_HVC ) ( u_vccd_pad VSWITCH ) ( u_vccd_pad VDDIO )
-      ( u_vccd_pad VDDA ) ( gpio_pads\[9\].u_gpio_pad VSWITCH ) ( gpio_pads\[9\].u_gpio_pad VDDIO ) ( gpio_pads\[9\].u_gpio_pad VDDA ) ( gpio_pads\[9\].u_gpio_pad HLD_H_N ) ( gpio_pads\[8\].u_gpio_pad VSWITCH ) ( gpio_pads\[8\].u_gpio_pad VDDIO ) ( gpio_pads\[8\].u_gpio_pad VDDA )
-      ( gpio_pads\[8\].u_gpio_pad HLD_H_N ) ( gpio_pads\[7\].u_gpio_pad VSWITCH ) ( gpio_pads\[7\].u_gpio_pad VDDIO ) ( gpio_pads\[7\].u_gpio_pad VDDA ) ( gpio_pads\[7\].u_gpio_pad HLD_H_N ) ( gpio_pads\[6\].u_gpio_pad VSWITCH ) ( gpio_pads\[6\].u_gpio_pad VDDIO ) ( gpio_pads\[6\].u_gpio_pad VDDA )
-      ( gpio_pads\[6\].u_gpio_pad HLD_H_N ) ( gpio_pads\[5\].u_gpio_pad VSWITCH ) ( gpio_pads\[5\].u_gpio_pad VDDIO ) ( gpio_pads\[5\].u_gpio_pad VDDA ) ( gpio_pads\[5\].u_gpio_pad HLD_H_N ) ( gpio_pads\[4\].u_gpio_pad VSWITCH ) ( gpio_pads\[4\].u_gpio_pad VDDIO ) ( gpio_pads\[4\].u_gpio_pad VDDA )
-      ( gpio_pads\[4\].u_gpio_pad HLD_H_N ) ( gpio_pads\[3\].u_gpio_pad VSWITCH ) ( gpio_pads\[3\].u_gpio_pad VDDIO ) ( gpio_pads\[3\].u_gpio_pad VDDA ) ( gpio_pads\[3\].u_gpio_pad HLD_H_N ) ( gpio_pads\[2\].u_gpio_pad VSWITCH ) ( gpio_pads\[2\].u_gpio_pad VDDIO ) ( gpio_pads\[2\].u_gpio_pad VDDA )
-      ( gpio_pads\[2\].u_gpio_pad HLD_H_N ) ( gpio_pads\[1\].u_gpio_pad VSWITCH ) ( gpio_pads\[1\].u_gpio_pad VDDIO ) ( gpio_pads\[1\].u_gpio_pad VDDA ) ( gpio_pads\[1\].u_gpio_pad HLD_H_N ) ( gpio_pads\[15\].u_gpio_pad VSWITCH ) ( gpio_pads\[15\].u_gpio_pad VDDIO ) ( gpio_pads\[15\].u_gpio_pad VDDA )
-      ( gpio_pads\[15\].u_gpio_pad HLD_H_N ) ( gpio_pads\[14\].u_gpio_pad VSWITCH ) ( gpio_pads\[14\].u_gpio_pad VDDIO ) ( gpio_pads\[14\].u_gpio_pad VDDA ) ( gpio_pads\[14\].u_gpio_pad HLD_H_N ) ( gpio_pads\[13\].u_gpio_pad VSWITCH ) ( gpio_pads\[13\].u_gpio_pad VDDIO ) ( gpio_pads\[13\].u_gpio_pad VDDA )
-      ( gpio_pads\[13\].u_gpio_pad HLD_H_N ) ( gpio_pads\[12\].u_gpio_pad VSWITCH ) ( gpio_pads\[12\].u_gpio_pad VDDIO ) ( gpio_pads\[12\].u_gpio_pad VDDA ) ( gpio_pads\[12\].u_gpio_pad HLD_H_N ) ( gpio_pads\[11\].u_gpio_pad VSWITCH ) ( gpio_pads\[11\].u_gpio_pad VDDIO ) ( gpio_pads\[11\].u_gpio_pad VDDA )
-      ( gpio_pads\[11\].u_gpio_pad HLD_H_N ) ( gpio_pads\[10\].u_gpio_pad VSWITCH ) ( gpio_pads\[10\].u_gpio_pad VDDIO ) ( gpio_pads\[10\].u_gpio_pad VDDA ) ( gpio_pads\[10\].u_gpio_pad HLD_H_N ) ( gpio_pads\[0\].u_gpio_pad VSWITCH ) ( gpio_pads\[0\].u_gpio_pad VDDIO ) ( gpio_pads\[0\].u_gpio_pad VDDA )
-      ( gpio_pads\[0\].u_gpio_pad HLD_H_N ) + USE POWER ;
+      ( u_vccd_pad VDDA ) ( gpio_pads\[9\].u_gpio_pad VSWITCH ) ( gpio_pads\[9\].u_gpio_pad VDDIO ) ( gpio_pads\[9\].u_gpio_pad VDDA ) ( gpio_pads\[9\].u_gpio_pad HLD_H_N ) ( gpio_pads\[9\].u_gpio_pad ENABLE_VDDA_H ) ( gpio_pads\[9\].u_gpio_pad ENABLE_H ) ( gpio_pads\[8\].u_gpio_pad VSWITCH )
+      ( gpio_pads\[8\].u_gpio_pad VDDIO ) ( gpio_pads\[8\].u_gpio_pad VDDA ) ( gpio_pads\[8\].u_gpio_pad HLD_H_N ) ( gpio_pads\[8\].u_gpio_pad ENABLE_VDDA_H ) ( gpio_pads\[8\].u_gpio_pad ENABLE_H ) ( gpio_pads\[7\].u_gpio_pad VSWITCH ) ( gpio_pads\[7\].u_gpio_pad VDDIO ) ( gpio_pads\[7\].u_gpio_pad VDDA )
+      ( gpio_pads\[7\].u_gpio_pad HLD_H_N ) ( gpio_pads\[7\].u_gpio_pad ENABLE_VDDA_H ) ( gpio_pads\[7\].u_gpio_pad ENABLE_H ) ( gpio_pads\[6\].u_gpio_pad VSWITCH ) ( gpio_pads\[6\].u_gpio_pad VDDIO ) ( gpio_pads\[6\].u_gpio_pad VDDA ) ( gpio_pads\[6\].u_gpio_pad HLD_H_N ) ( gpio_pads\[6\].u_gpio_pad ENABLE_VDDA_H )
+      ( gpio_pads\[6\].u_gpio_pad ENABLE_H ) ( gpio_pads\[5\].u_gpio_pad VSWITCH ) ( gpio_pads\[5\].u_gpio_pad VDDIO ) ( gpio_pads\[5\].u_gpio_pad VDDA ) ( gpio_pads\[5\].u_gpio_pad HLD_H_N ) ( gpio_pads\[5\].u_gpio_pad ENABLE_VDDA_H ) ( gpio_pads\[5\].u_gpio_pad ENABLE_H ) ( gpio_pads\[4\].u_gpio_pad VSWITCH )
+      ( gpio_pads\[4\].u_gpio_pad VDDIO ) ( gpio_pads\[4\].u_gpio_pad VDDA ) ( gpio_pads\[4\].u_gpio_pad HLD_H_N ) ( gpio_pads\[4\].u_gpio_pad ENABLE_VDDA_H ) ( gpio_pads\[4\].u_gpio_pad ENABLE_H ) ( gpio_pads\[3\].u_gpio_pad VSWITCH ) ( gpio_pads\[3\].u_gpio_pad VDDIO ) ( gpio_pads\[3\].u_gpio_pad VDDA )
+      ( gpio_pads\[3\].u_gpio_pad HLD_H_N ) ( gpio_pads\[3\].u_gpio_pad ENABLE_VDDA_H ) ( gpio_pads\[3\].u_gpio_pad ENABLE_H ) ( gpio_pads\[2\].u_gpio_pad VSWITCH ) ( gpio_pads\[2\].u_gpio_pad VDDIO ) ( gpio_pads\[2\].u_gpio_pad VDDA ) ( gpio_pads\[2\].u_gpio_pad HLD_H_N ) ( gpio_pads\[2\].u_gpio_pad ENABLE_VDDA_H )
+      ( gpio_pads\[2\].u_gpio_pad ENABLE_H ) ( gpio_pads\[1\].u_gpio_pad VSWITCH ) ( gpio_pads\[1\].u_gpio_pad VDDIO ) ( gpio_pads\[1\].u_gpio_pad VDDA ) ( gpio_pads\[1\].u_gpio_pad HLD_H_N ) ( gpio_pads\[1\].u_gpio_pad ENABLE_VDDA_H ) ( gpio_pads\[1\].u_gpio_pad ENABLE_H ) ( gpio_pads\[15\].u_gpio_pad VSWITCH )
+      ( gpio_pads\[15\].u_gpio_pad VDDIO ) ( gpio_pads\[15\].u_gpio_pad VDDA ) ( gpio_pads\[15\].u_gpio_pad HLD_H_N ) ( gpio_pads\[15\].u_gpio_pad ENABLE_VDDA_H ) ( gpio_pads\[15\].u_gpio_pad ENABLE_H ) ( gpio_pads\[14\].u_gpio_pad VSWITCH ) ( gpio_pads\[14\].u_gpio_pad VDDIO ) ( gpio_pads\[14\].u_gpio_pad VDDA )
+      ( gpio_pads\[14\].u_gpio_pad HLD_H_N ) ( gpio_pads\[14\].u_gpio_pad ENABLE_VDDA_H ) ( gpio_pads\[14\].u_gpio_pad ENABLE_H ) ( gpio_pads\[13\].u_gpio_pad VSWITCH ) ( gpio_pads\[13\].u_gpio_pad VDDIO ) ( gpio_pads\[13\].u_gpio_pad VDDA ) ( gpio_pads\[13\].u_gpio_pad HLD_H_N ) ( gpio_pads\[13\].u_gpio_pad ENABLE_VDDA_H )
+      ( gpio_pads\[13\].u_gpio_pad ENABLE_H ) ( gpio_pads\[12\].u_gpio_pad VSWITCH ) ( gpio_pads\[12\].u_gpio_pad VDDIO ) ( gpio_pads\[12\].u_gpio_pad VDDA ) ( gpio_pads\[12\].u_gpio_pad HLD_H_N ) ( gpio_pads\[12\].u_gpio_pad ENABLE_VDDA_H ) ( gpio_pads\[12\].u_gpio_pad ENABLE_H ) ( gpio_pads\[11\].u_gpio_pad VSWITCH )
+      ( gpio_pads\[11\].u_gpio_pad VDDIO ) ( gpio_pads\[11\].u_gpio_pad VDDA ) ( gpio_pads\[11\].u_gpio_pad HLD_H_N ) ( gpio_pads\[11\].u_gpio_pad ENABLE_VDDA_H ) ( gpio_pads\[11\].u_gpio_pad ENABLE_H ) ( gpio_pads\[10\].u_gpio_pad VSWITCH ) ( gpio_pads\[10\].u_gpio_pad VDDIO ) ( gpio_pads\[10\].u_gpio_pad VDDA )
+      ( gpio_pads\[10\].u_gpio_pad HLD_H_N ) ( gpio_pads\[10\].u_gpio_pad ENABLE_VDDA_H ) ( gpio_pads\[10\].u_gpio_pad ENABLE_H ) ( gpio_pads\[0\].u_gpio_pad VSWITCH ) ( gpio_pads\[0\].u_gpio_pad VDDIO ) ( gpio_pads\[0\].u_gpio_pad VDDA ) ( gpio_pads\[0\].u_gpio_pad HLD_H_N ) ( gpio_pads\[0\].u_gpio_pad ENABLE_VDDA_H )
+      ( gpio_pads\[0\].u_gpio_pad ENABLE_H ) + USE POWER ;
     - vddio_q ( IO_FILL_IO_SOUTH_0_1540 VDDIO_Q ) ( IO_FILL_IO_SOUTH_0_1520 VDDIO_Q ) ( IO_FILL_IO_SOUTH_0_1500 VDDIO_Q ) ( IO_FILL_IO_SOUTH_0_1480 VDDIO_Q ) ( IO_FILL_IO_SOUTH_0_1460 VDDIO_Q ) ( IO_FILL_IO_SOUTH_0_1440 VDDIO_Q ) ( IO_FILL_IO_SOUTH_0_1420 VDDIO_Q )
       ( IO_FILL_IO_SOUTH_0_1400 VDDIO_Q ) ( IO_FILL_IO_SOUTH_0_1380 VDDIO_Q ) ( IO_FILL_IO_SOUTH_0_1360 VDDIO_Q ) ( IO_FILL_IO_SOUTH_0_1340 VDDIO_Q ) ( IO_FILL_IO_SOUTH_0_1320 VDDIO_Q ) ( IO_FILL_IO_SOUTH_0_1300 VDDIO_Q ) ( IO_FILL_IO_SOUTH_0_1280 VDDIO_Q ) ( IO_FILL_IO_SOUTH_0_1260 VDDIO_Q )
       ( IO_FILL_IO_SOUTH_0_1240 VDDIO_Q ) ( IO_FILL_IO_SOUTH_0_1220 VDDIO_Q ) ( IO_FILL_IO_SOUTH_0_1200 VDDIO_Q ) ( IO_FILL_IO_SOUTH_0_1180 VDDIO_Q ) ( IO_FILL_IO_SOUTH_0_1160 VDDIO_Q ) ( IO_FILL_IO_SOUTH_0_1140 VDDIO_Q ) ( IO_FILL_IO_SOUTH_0_1120 VDDIO_Q ) ( IO_FILL_IO_SOUTH_0_1100 VDDIO_Q )
