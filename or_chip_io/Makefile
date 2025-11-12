@@ -18,6 +18,10 @@ $(TOP).gds: magic.tcl outputs/$(TOP).def
 outputs/$(TOP).def: openroad.tcl src/$(TOP).gl.v | outputs
 	openroad $< -exit
 
+# DEF phony
+.PHONY: def
+def:	outputs/$(TOP).def
+
 # Build synthesized netlist
 src/$(TOP).gl.v: src/$(TOP).sv yosys.ys
 	yosys -s yosys.ys

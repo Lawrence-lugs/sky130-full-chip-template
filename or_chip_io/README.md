@@ -4,9 +4,19 @@ Here I test the OpenROAD flow for generating pads by creating a counter with 8 p
 
 ### Usage
 
-Just use the makefile
+To build the def, make the GDS, and run DRC and LVS, run make.
 ```
 make
+```
+
+To build just the def,
+```
+make def
+```
+
+To build until just the gds,
+```
+make gds
 ```
 
 ### DRC and LVS

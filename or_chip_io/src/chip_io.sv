@@ -8,8 +8,9 @@ module chip_io #(
     inout vssio,
     
     // Ring resets
-    input porb_h, // power-on reset, sense inverted, 3.3V domain
-    input por,    // power on reset, noninverted, 1.8V domain
+    // We separate this into different signals so that we don't have separate pins
+    // input [numGPIO-1:0] porb_h, // power-on reset, sense inverted, 3.3V domain
+    // input [numGPIO-1:0] por,    // power on reset, noninverted, 1.8V domain
     
     // GPIO 
     inout [numGPIO-1:0] gpio_pad, // physical pad is inout
@@ -48,16 +49,21 @@ module chip_io #(
                 .ANALOG_POL      (vssd), // all analog test features disabled
                 .ANALOG_SEL      (vssd), // all analog test features disabled
                 .DM              ({ dm2[i], dm1[i], dm0[i] }), // From core
-                .ENABLE_H        (porb_h), // tied to 3.3V nrst = 1 in normal operation
+                
+                // TODO: How do other padrings handle ENABLE_H and ENABLE_VDDA_H?
+                // This is porb_h in Caravel and OpenFrame, but those aren't generated inside the core.
+                // No pad in the documentation generates por and porb_h.
+                .ENABLE_H        (vddio), // tied to 3.3V nrst = 1 in normal operation
+                .ENABLE_VDDA_H   (vddio), // tied to 3.3V nrst = 1 in normal operation
+
                 .ENABLE_INP_H    (tielow[i]), // tied to VSS to always enable input
-                .ENABLE_VDDA_H   (porb_h), // tied to 3.3V nrst = 1 in normal operation
                 .ENABLE_VDDIO    (vccd),
                 .ENABLE_VSWITCH_H(vssio), // tied to VSS to always enable input
                 .HLD_H_N         (vddio), // hold pad state active low
                 .HLD_OVR         (hld_ovr[i]), // From core
                 .IB_MODE_SEL     (ib_mode_sel[i]), // From core
                 .IN              (gpio_in[i]), // From core
-                .INP_DIS         (por), // tied to 3.3V nrst = 1 in normal operation
+                .INP_DIS         (vccd), // tied to 1.8V nrst = 1 in normal operation
                 .IN_H            (), // From core
                 .OE_N            (oe_n[i]), // From core
                 .OUT             (gpio_out[i]), // From core
