@@ -2,7 +2,22 @@ meta:
   version: 0
   flow: Classic
   substituting_steps:
+    Netgen.LVS: null # Still debugging DRC.
+
+    OpenROAD.STAMidPNR: null # Skip to save time
+    OpenROAD.STAPrePNR: null # Skip to save time
+
+    # THE FOLLOWING ARE ALSO SKIPPED IN CARAVEL AND OPENFRAME
+    # We'll run fillgen as a script later, then DRC again. 
     OpenROAD.FillInsertion: null # Inserting fills not needed yet, too heavy
+    OpenROAD.TapEndcapInsertion: null # Pad ports too close together
+    Odb.DiodesOnPorts: null # Pad ports too close together
+    OpenROAD.CTS: null # No need if the core is a hardened macro
+
+    Checker.YosysSynthChecks: null # This causes errors when unused pins are not tied off.
+    # but we can't tie pins off to 1 or 0 because they cause DRC errors 
+    # in openframe or caravel they tie pads off using loopback `caravel/verilog/gl/constant_blocks.v`
+    # there's also a constant_block.def that describes it, so it's a custom macro used in their padring.
 
 DESIGN_NAME: "core_wrapper"
 
@@ -51,9 +66,3 @@ FP_PDN_VWIDTH: 6.4
 FP_PDN_HWIDTH: 6.4
 FP_PDN_HSPACING: 3.2
 FP_PDN_VSPACING: 3.2
-
-# PDN_MACRO_CONNECTIONS:
-#   - "u_regfile vccd vssd vccd vssd"
-
-# CTS Settings
-CLOCK_NET: clk
