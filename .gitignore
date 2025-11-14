@@ -188,3 +188,5 @@ orfs/
 
 # Magic extraction files
 extract/
+obj_dir/
+sim/
