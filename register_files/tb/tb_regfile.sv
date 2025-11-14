@@ -1,6 +1,5 @@
 `timescale 1ns/1ps
 
-
 module tb_regfile #(
     localparam CLK_PERIOD = 20,
     localparam ADDR_WIDTH = 4,
@@ -76,7 +75,7 @@ end
 // SDF annotate if IVerilog
 `ifdef SDF_ANNOTATE
     initial begin
-        $sdf_annotate("outputs/sdf/min_ss_100C_1v60/regfile__min_ss_100C_1v60.sdf", u_regfile);
+        $sdf_annotate("../outputs/sdf/min_ss_100C_1v60/regfile__min_ss_100C_1v60.sdf", u_regfile);
     end
 `endif
 
