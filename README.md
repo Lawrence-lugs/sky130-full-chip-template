@@ -48,27 +48,20 @@ Then, you can open this folder in VSCode and it will prompt you to reopen it in 
 
 ### Run as docker container
 
-To run as docker, follow the steps below to activate [JKU's Open Source Tools Docker](https://github.com/iic-jku/IIC-OSIC-TOOLS).
+To run as docker, follow the steps below to activate the container based on [JKU's Open Source Tools Docker](https://github.com/iic-jku/IIC-OSIC-TOOLS).
 
 1. Download [Docker Desktop](https://www.docker.com/products/docker-desktop/) for your OS
     1. A requirement for Docker is WSL2 on windows. Follow the instructions [here](https://learn.microsoft.com/en-us/windows/wsl/install) to setup WSL2.
 2. Start Docker Desktop
-1. Open a terminal
-3. In that terminal, do `git clone --depth=1 https://github.com/iic-jku/iic-osic-tools.git`
-    1. For windows users using powershell, if git is not found, run the following in the command prompt: `winget install --id Git.Git -e --source winget`
-4. Change directory into the cloned directory: `cd iic-osic-tools`
-5. Then, use `./start_x.sh`  (or `./start_x.bat`, if you’re on Windows)
-    1. This part will take a while, as the PDKs and tools are downloaded.
+3. Clone and enter this repository:
+  ```
+  git clone https://github.com/Lawrence-lugs/sky130-full-chip-template.git
+  cd sky130-full-chip-template
+  ```
+4. Run the following:
+    1. On windows: `./.devcontainer/run_docker.bat`
+    2. On MacOS or Linux `./.devcontainer/run_docker.sh`
 6. You should now have a usable terminal with which you can call all the tools and follow the instructions.
-
-Then, run 
-
-```bash
-git clone https://github.com/Lawrence-lugs/sky130-full-chip-template.git
-cd sky130-full-chip-template
-```
-
-and you should have the base environment.
 
 ## Running the code
 
@@ -87,3 +80,4 @@ If you need to inspect the scripts that Librelane uses internally, please see `/
 - [ ] Core + Padring
 - [ ] Chip LVS
 - [ ] Github Workflows
+- [ ] Global Makefile
