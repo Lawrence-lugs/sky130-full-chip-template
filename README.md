@@ -53,7 +53,8 @@ To run as docker, follow the steps below to activate the container based on [JKU
 1. Download [Docker Desktop](https://www.docker.com/products/docker-desktop/) for your OS
     1. A requirement for Docker is WSL2 on windows. Follow the instructions [here](https://learn.microsoft.com/en-us/windows/wsl/install) to setup WSL2.
 2. Start Docker Desktop
-3. Clone and enter this repository:
+3. Open a Powershell Terminal
+4. Clone and enter this repository:
   ```
   git clone https://github.com/Lawrence-lugs/sky130-full-chip-template.git
   cd sky130-full-chip-template
