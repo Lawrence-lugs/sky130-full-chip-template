@@ -59,7 +59,7 @@ To run as docker, follow the steps below to activate the container based on [JKU
   cd sky130-full-chip-template
   ```
 4. Run the following:
-    1. On windows: `./.devcontainer/run_docker.bat`
+    1. On windows: `./.devcontainer/run_docker.ps1`
     2. On MacOS or Linux `./.devcontainer/run_docker.sh`
 6. You should now have a usable terminal with which you can call all the tools and follow the instructions.
 
