@@ -56,7 +56,8 @@ iverilog: sim_folder
 
 # Gate-level and delay annotated simulation
 PDKPATH ?= /path/to/pdk/sky130A
-SKY130_HD_VERILOG    := $(wildcard $(PDKPATH)/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v)
+# SKY130_HD_VERILOG    := $(wildcard $(PDKPATH)/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v)
+SKY130_HD_VERILOG    := src/sky130_fd_sc_hd.v
 SKY130_PRIM_VERILOG    := $(wildcard $(PDKPATH)/libs.ref/sky130_fd_sc_hd/verilog/primitives.v)
 
 .PHONY: sdf_sim 
@@ -67,5 +68,6 @@ sdf_sim: sim_folder sak_sky130
 	$(GATE_LEVEL_SOURCES) \
 	-DSDF_ANNOTATE \
 	-DGATE_LEVEL \
-	-gspecify
+	-gspecify \
+	-ginterconnect
 	cd sim && ./tb_regfile_sdf
